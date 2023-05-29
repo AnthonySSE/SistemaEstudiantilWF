@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [SistemaEstudiantil]    Script Date: 26/5/2023 7:10:53 p. m. ******/
+/****** Object:  Database [SistemaEstudiantil]    Script Date: 29/5/2023 12:36:50 a. m. ******/
 CREATE DATABASE [SistemaEstudiantil]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -82,7 +82,7 @@ ALTER DATABASE [SistemaEstudiantil] SET QUERY_STORE (OPERATION_MODE = READ_WRITE
 GO
 USE [SistemaEstudiantil]
 GO
-/****** Object:  Table [dbo].[Asignatura]    Script Date: 26/5/2023 7:10:53 p. m. ******/
+/****** Object:  Table [dbo].[Asignatura]    Script Date: 29/5/2023 12:36:50 a. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -96,7 +96,7 @@ CREATE TABLE [dbo].[Asignatura](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[AsignaturaEstudiante]    Script Date: 26/5/2023 7:10:53 p. m. ******/
+/****** Object:  Table [dbo].[AsignaturaEstudiante]    Script Date: 29/5/2023 12:36:50 a. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -105,14 +105,14 @@ CREATE TABLE [dbo].[AsignaturaEstudiante](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[IdEstudiante] [varchar](15) NOT NULL,
 	[IdAsignatura] [int] NOT NULL,
-	[Calificacion] [decimal](2, 2) NULL,
+	[Calificacion] [decimal](2, 2) NOT NULL,
  CONSTRAINT [PK_Id] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Estudiante]    Script Date: 26/5/2023 7:10:53 p. m. ******/
+/****** Object:  Table [dbo].[Estudiante]    Script Date: 29/5/2023 12:36:50 a. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -131,10 +131,14 @@ CREATE TABLE [dbo].[Estudiante](
  CONSTRAINT [PK_Matricula] PRIMARY KEY CLUSTERED 
 (
 	[Matricula] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY],
+UNIQUE NONCLUSTERED 
+(
+	[Matricula] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Usuario]    Script Date: 26/5/2023 7:10:53 p. m. ******/
+/****** Object:  Table [dbo].[Usuario]    Script Date: 29/5/2023 12:36:50 a. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -144,20 +148,13 @@ CREATE TABLE [dbo].[Usuario](
 	[Nombre] [varchar](30) NOT NULL,
 	[Apellidos] [varchar](30) NOT NULL,
 	[IdUsuario] [varchar](15) NOT NULL,
-	[Rol] [varchar](30) NULL,
+	[Contrasena] [varchar](64) NOT NULL,
+	[Rol] [varchar](30) NOT NULL,
  CONSTRAINT [PK_IdUsuario] PRIMARY KEY CLUSTERED 
 (
 	[IdUsuario] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
-GO
-SET ANSI_PADDING ON
-GO
-/****** Object:  Index [UQ__Estudian__0FB9FB4F0B365F8A]    Script Date: 26/5/2023 7:10:53 p. m. ******/
-ALTER TABLE [dbo].[Estudiante] ADD UNIQUE NONCLUSTERED 
-(
-	[Matricula] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[AsignaturaEstudiante]  WITH CHECK ADD  CONSTRAINT [FK_IdAsignatura] FOREIGN KEY([IdAsignatura])
 REFERENCES [dbo].[Asignatura] ([IdAsignatura])
