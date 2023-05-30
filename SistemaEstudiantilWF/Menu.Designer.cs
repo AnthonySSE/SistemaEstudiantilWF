@@ -43,7 +43,7 @@
             // 
             // button1
             // 
-            button1.BackColor = SystemColors.Highlight;
+            button1.BackColor = Color.RoyalBlue;
             button1.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
             button1.Location = new Point(690, 20);
@@ -63,7 +63,7 @@
             // 
             // button7
             // 
-            button7.BackColor = SystemColors.Highlight;
+            button7.BackColor = Color.RoyalBlue;
             button7.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button7.ForeColor = Color.White;
             button7.Location = new Point(12, 398);
@@ -86,10 +86,10 @@
             // 
             // button8
             // 
-            button8.BackColor = SystemColors.Highlight;
+            button8.BackColor = Color.RoyalBlue;
             button8.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button8.ForeColor = Color.White;
-            button8.Location = new Point(12, 267);
+            button8.Location = new Point(12, 248);
             button8.Name = "button8";
             button8.Size = new Size(248, 32);
             button8.TabIndex = 18;
@@ -98,10 +98,10 @@
             // 
             // button9
             // 
-            button9.BackColor = SystemColors.Highlight;
+            button9.BackColor = Color.RoyalBlue;
             button9.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button9.ForeColor = Color.White;
-            button9.Location = new Point(12, 214);
+            button9.Location = new Point(12, 195);
             button9.Name = "button9";
             button9.Size = new Size(248, 34);
             button9.TabIndex = 17;
@@ -110,10 +110,10 @@
             // 
             // button10
             // 
-            button10.BackColor = SystemColors.Highlight;
+            button10.BackColor = Color.RoyalBlue;
             button10.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button10.ForeColor = Color.White;
-            button10.Location = new Point(12, 161);
+            button10.Location = new Point(12, 142);
             button10.Name = "button10";
             button10.Size = new Size(248, 38);
             button10.TabIndex = 16;
@@ -122,10 +122,10 @@
             // 
             // button11
             // 
-            button11.BackColor = SystemColors.Highlight;
+            button11.BackColor = Color.RoyalBlue;
             button11.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button11.ForeColor = Color.White;
-            button11.Location = new Point(12, 108);
+            button11.Location = new Point(12, 89);
             button11.Name = "button11";
             button11.Size = new Size(248, 36);
             button11.TabIndex = 15;
@@ -134,10 +134,10 @@
             // 
             // button12
             // 
-            button12.BackColor = SystemColors.Highlight;
+            button12.BackColor = Color.RoyalBlue;
             button12.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button12.ForeColor = Color.White;
-            button12.Location = new Point(12, 55);
+            button12.Location = new Point(12, 36);
             button12.Name = "button12";
             button12.Size = new Size(248, 35);
             button12.TabIndex = 14;
@@ -155,7 +155,7 @@
             label2.TabIndex = 41;
             label2.Text = "Matricula";
             // 
-            // Form3
+            // Menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -171,7 +171,7 @@
             Controls.Add(button7);
             Controls.Add(button1);
             Controls.Add(textBox1);
-            Name = "Form3";
+            Name = "Menu";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -64,7 +64,7 @@
             // 
             // button1
             // 
-            button1.BackColor = SystemColors.Highlight;
+            button1.BackColor = Color.RoyalBlue;
             button1.Cursor = Cursors.IBeam;
             button1.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
@@ -78,7 +78,7 @@
             // 
             // button2
             // 
-            button2.BackColor = SystemColors.Highlight;
+            button2.BackColor = Color.RoyalBlue;
             button2.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = Color.White;
             button2.Location = new Point(32, 91);
@@ -90,7 +90,7 @@
             // 
             // button3
             // 
-            button3.BackColor = SystemColors.Highlight;
+            button3.BackColor = Color.RoyalBlue;
             button3.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button3.ForeColor = Color.White;
             button3.Location = new Point(32, 144);
@@ -102,7 +102,7 @@
             // 
             // button4
             // 
-            button4.BackColor = SystemColors.Highlight;
+            button4.BackColor = Color.RoyalBlue;
             button4.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button4.ForeColor = Color.White;
             button4.Location = new Point(32, 197);
@@ -114,7 +114,7 @@
             // 
             // button5
             // 
-            button5.BackColor = SystemColors.Highlight;
+            button5.BackColor = Color.RoyalBlue;
             button5.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button5.ForeColor = Color.White;
             button5.Location = new Point(32, 250);
@@ -199,7 +199,7 @@
             // 
             // button7
             // 
-            button7.BackColor = SystemColors.Highlight;
+            button7.BackColor = Color.RoyalBlue;
             button7.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button7.ForeColor = Color.White;
             button7.Location = new Point(390, 412);
@@ -211,7 +211,7 @@
             // 
             // button8
             // 
-            button8.BackColor = SystemColors.Highlight;
+            button8.BackColor = Color.RoyalBlue;
             button8.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button8.ForeColor = Color.White;
             button8.Location = new Point(748, 412);
@@ -225,7 +225,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.MenuHighlight;
+            label1.ForeColor = Color.Black;
             label1.Location = new Point(402, 21);
             label1.Name = "label1";
             label1.Size = new Size(20, 15);
@@ -236,7 +236,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = SystemColors.MenuHighlight;
+            label2.ForeColor = Color.Black;
             label2.Location = new Point(402, 115);
             label2.Name = "label2";
             label2.Size = new Size(52, 15);
@@ -247,7 +247,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = SystemColors.MenuHighlight;
+            label3.ForeColor = Color.Black;
             label3.Location = new Point(402, 200);
             label3.Name = "label3";
             label3.Size = new Size(123, 15);
@@ -259,7 +259,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = SystemColors.MenuHighlight;
+            label4.ForeColor = Color.Black;
             label4.Location = new Point(610, 21);
             label4.Name = "label4";
             label4.Size = new Size(59, 15);
@@ -270,7 +270,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = SystemColors.MenuHighlight;
+            label5.ForeColor = Color.Black;
             label5.Location = new Point(610, 115);
             label5.Name = "label5";
             label5.Size = new Size(33, 15);
@@ -281,7 +281,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.ForeColor = SystemColors.MenuHighlight;
+            label6.ForeColor = Color.Black;
             label6.Location = new Point(610, 200);
             label6.Name = "label6";
             label6.Size = new Size(38, 15);
@@ -292,7 +292,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.ForeColor = SystemColors.MenuHighlight;
+            label7.ForeColor = Color.Black;
             label7.Location = new Point(832, 22);
             label7.Name = "label7";
             label7.Size = new Size(53, 15);
@@ -303,7 +303,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.ForeColor = SystemColors.MenuHighlight;
+            label8.ForeColor = Color.Black;
             label8.Location = new Point(832, 115);
             label8.Name = "label8";
             label8.Size = new Size(35, 15);
@@ -314,7 +314,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.ForeColor = SystemColors.MenuHighlight;
+            label9.ForeColor = Color.Black;
             label9.Location = new Point(832, 200);
             label9.Name = "label9";
             label9.Size = new Size(123, 15);
@@ -325,7 +325,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.ForeColor = SystemColors.MenuHighlight;
+            label10.ForeColor = Color.Black;
             label10.Location = new Point(448, 277);
             label10.Name = "label10";
             label10.Size = new Size(76, 15);
@@ -336,7 +336,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.ForeColor = SystemColors.MenuHighlight;
+            label11.ForeColor = Color.Black;
             label11.Location = new Point(657, 277);
             label11.Name = "label11";
             label11.Size = new Size(76, 15);
@@ -348,7 +348,7 @@
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label12.ForeColor = SystemColors.MenuHighlight;
+            label12.ForeColor = Color.Black;
             label12.Location = new Point(856, 277);
             label12.Name = "label12";
             label12.Size = new Size(76, 15);
@@ -385,7 +385,7 @@
             // 
             // button6
             // 
-            button6.BackColor = SystemColors.Highlight;
+            button6.BackColor = Color.RoyalBlue;
             button6.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button6.ForeColor = Color.White;
             button6.Location = new Point(12, 420);
@@ -395,7 +395,7 @@
             button6.Text = "Salir";
             button6.UseVisualStyleBackColor = false;
             // 
-            // Form4
+            // Crear
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -433,7 +433,7 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Name = "Form4";
+            Name = "Crear";
             Load += Form4_Load;
             ResumeLayout(false);
             PerformLayout();

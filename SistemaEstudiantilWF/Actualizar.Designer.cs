@@ -45,7 +45,7 @@
             // 
             // button6
             // 
-            button6.BackColor = SystemColors.Highlight;
+            button6.BackColor = Color.RoyalBlue;
             button6.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button6.ForeColor = Color.White;
             button6.Location = new Point(20, 415);
@@ -57,7 +57,7 @@
             // 
             // button5
             // 
-            button5.BackColor = SystemColors.Highlight;
+            button5.BackColor = Color.RoyalBlue;
             button5.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button5.ForeColor = Color.White;
             button5.Location = new Point(20, 253);
@@ -69,7 +69,7 @@
             // 
             // button4
             // 
-            button4.BackColor = SystemColors.Highlight;
+            button4.BackColor = Color.RoyalBlue;
             button4.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button4.ForeColor = Color.White;
             button4.Location = new Point(20, 200);
@@ -81,7 +81,7 @@
             // 
             // button3
             // 
-            button3.BackColor = SystemColors.Highlight;
+            button3.BackColor = Color.RoyalBlue;
             button3.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button3.ForeColor = Color.White;
             button3.Location = new Point(20, 147);
@@ -93,7 +93,7 @@
             // 
             // button2
             // 
-            button2.BackColor = SystemColors.Highlight;
+            button2.BackColor = Color.RoyalBlue;
             button2.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = Color.White;
             button2.Location = new Point(20, 94);
@@ -105,7 +105,7 @@
             // 
             // button1
             // 
-            button1.BackColor = SystemColors.Highlight;
+            button1.BackColor = Color.RoyalBlue;
             button1.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
             button1.Location = new Point(20, 41);
@@ -128,7 +128,7 @@
             // 
             // button7
             // 
-            button7.BackColor = SystemColors.Highlight;
+            button7.BackColor = Color.RoyalBlue;
             button7.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button7.ForeColor = Color.White;
             button7.Location = new Point(708, 22);
@@ -159,7 +159,7 @@
             // 
             // button8
             // 
-            button8.BackColor = SystemColors.Highlight;
+            button8.BackColor = Color.RoyalBlue;
             button8.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button8.ForeColor = Color.White;
             button8.Location = new Point(840, 415);
@@ -171,7 +171,7 @@
             // 
             // button9
             // 
-            button9.BackColor = SystemColors.Highlight;
+            button9.BackColor = Color.RoyalBlue;
             button9.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button9.ForeColor = Color.White;
             button9.Location = new Point(314, 415);
@@ -182,7 +182,7 @@
             button9.UseVisualStyleBackColor = false;
             button9.Click += button9_Click;
             // 
-            // Form5
+            // Actualizar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -199,7 +199,7 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Name = "Form5";
+            Name = "Actualizar";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
