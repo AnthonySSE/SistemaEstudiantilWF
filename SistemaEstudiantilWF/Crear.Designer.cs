@@ -359,6 +359,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Matematica", "Naturales", "Sociales", "Lenguaje", "Ingles", "Deporte" });
             comboBox1.Location = new Point(390, 309);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(170, 23);
@@ -368,6 +369,7 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "Matematica", "Naturales", "Sociales", "Lenguaje", "Ingles", "Deporte" });
             comboBox2.Location = new Point(610, 309);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(170, 23);
@@ -377,6 +379,7 @@
             // comboBox3
             // 
             comboBox3.FormattingEnabled = true;
+            comboBox3.Items.AddRange(new object[] { "Matematica", "Naturales", "Sociales", "Lenguaje", "Ingles", "Deporte" });
             comboBox3.Location = new Point(815, 309);
             comboBox3.Name = "comboBox3";
             comboBox3.Size = new Size(170, 23);
