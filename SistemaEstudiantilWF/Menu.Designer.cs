@@ -28,132 +28,177 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
+            btnBuscarmenu = new Button();
             textBox1 = new TextBox();
-            button7 = new Button();
+            btnSalir = new Button();
             dataGridView1 = new DataGridView();
-            button8 = new Button();
-            button9 = new Button();
-            button10 = new Button();
-            button11 = new Button();
-            button12 = new Button();
+            btnReporte = new Button();
+            btnDigitar = new Button();
+            btnEliminar = new Button();
+            btnActulizar = new Button();
+            btnCrear = new Button();
             label2 = new Label();
+            Barra_Menu = new Panel();
+            btnCerrar = new PictureBox();
+            Panel = new Panel();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            Barra_Menu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
+            Panel.SuspendLayout();
             SuspendLayout();
             // 
-            // button1
+            // btnBuscarmenu
             // 
-            button1.BackColor = Color.RoyalBlue;
-            button1.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(690, 20);
-            button1.Name = "button1";
-            button1.Size = new Size(103, 26);
-            button1.TabIndex = 6;
-            button1.Text = "Buscar";
-            button1.UseVisualStyleBackColor = false;
+            btnBuscarmenu.BackColor = Color.RoyalBlue;
+            btnBuscarmenu.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnBuscarmenu.ForeColor = Color.White;
+            btnBuscarmenu.Location = new Point(743, 54);
+            btnBuscarmenu.Name = "btnBuscarmenu";
+            btnBuscarmenu.Size = new Size(103, 26);
+            btnBuscarmenu.TabIndex = 6;
+            btnBuscarmenu.Text = "Buscar";
+            btnBuscarmenu.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
             textBox1.BackColor = Color.FromArgb(230, 231, 233);
-            textBox1.Location = new Point(450, 20);
+            textBox1.Location = new Point(503, 54);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(223, 23);
             textBox1.TabIndex = 4;
             // 
-            // button7
+            // btnSalir
             // 
-            button7.BackColor = Color.RoyalBlue;
-            button7.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button7.ForeColor = Color.White;
-            button7.Location = new Point(12, 398);
-            button7.Name = "button7";
-            button7.Size = new Size(177, 30);
-            button7.TabIndex = 12;
-            button7.Text = "Salir";
-            button7.UseVisualStyleBackColor = false;
-            button7.Click += button7_Click;
+            btnSalir.BackColor = Color.RoyalBlue;
+            btnSalir.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSalir.ForeColor = Color.White;
+            btnSalir.Location = new Point(12, 398);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(177, 30);
+            btnSalir.TabIndex = 12;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = false;
+            btnSalir.Click += button7_Click;
             // 
             // dataGridView1
             // 
             dataGridView1.BackgroundColor = Color.FromArgb(230, 231, 233);
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(296, 55);
+            dataGridView1.Location = new Point(303, 86);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(703, 353);
+            dataGridView1.Size = new Size(703, 321);
             dataGridView1.TabIndex = 13;
             // 
-            // button8
+            // btnReporte
             // 
-            button8.BackColor = Color.RoyalBlue;
-            button8.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button8.ForeColor = Color.White;
-            button8.Location = new Point(12, 248);
-            button8.Name = "button8";
-            button8.Size = new Size(248, 32);
-            button8.TabIndex = 18;
-            button8.Text = "Reporte de Estidiante";
-            button8.UseVisualStyleBackColor = false;
+            btnReporte.BackColor = Color.RoyalBlue;
+            btnReporte.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnReporte.ForeColor = Color.White;
+            btnReporte.Location = new Point(3, 253);
+            btnReporte.Name = "btnReporte";
+            btnReporte.Size = new Size(248, 32);
+            btnReporte.TabIndex = 18;
+            btnReporte.Text = "Reporte de Estidiante";
+            btnReporte.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // btnDigitar
             // 
-            button9.BackColor = Color.RoyalBlue;
-            button9.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button9.ForeColor = Color.White;
-            button9.Location = new Point(12, 195);
-            button9.Name = "button9";
-            button9.Size = new Size(248, 34);
-            button9.TabIndex = 17;
-            button9.Text = "Digitar Calificaciones de Estudiante";
-            button9.UseVisualStyleBackColor = false;
+            btnDigitar.BackColor = Color.RoyalBlue;
+            btnDigitar.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDigitar.ForeColor = Color.White;
+            btnDigitar.Location = new Point(3, 193);
+            btnDigitar.Name = "btnDigitar";
+            btnDigitar.Size = new Size(248, 34);
+            btnDigitar.TabIndex = 17;
+            btnDigitar.Text = "Digitar Calificaciones de Estudiante";
+            btnDigitar.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // btnEliminar
             // 
-            button10.BackColor = Color.RoyalBlue;
-            button10.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button10.ForeColor = Color.White;
-            button10.Location = new Point(12, 142);
-            button10.Name = "button10";
-            button10.Size = new Size(248, 38);
-            button10.TabIndex = 16;
-            button10.Text = "Eliminar Estudiante";
-            button10.UseVisualStyleBackColor = false;
+            btnEliminar.BackColor = Color.RoyalBlue;
+            btnEliminar.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnEliminar.ForeColor = Color.White;
+            btnEliminar.Location = new Point(3, 137);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(248, 38);
+            btnEliminar.TabIndex = 16;
+            btnEliminar.Text = "Eliminar Estudiante";
+            btnEliminar.UseVisualStyleBackColor = false;
             // 
-            // button11
+            // btnActulizar
             // 
-            button11.BackColor = Color.RoyalBlue;
-            button11.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button11.ForeColor = Color.White;
-            button11.Location = new Point(12, 89);
-            button11.Name = "button11";
-            button11.Size = new Size(248, 36);
-            button11.TabIndex = 15;
-            button11.Text = "Actualizar Estudiante";
-            button11.UseVisualStyleBackColor = false;
+            btnActulizar.BackColor = Color.RoyalBlue;
+            btnActulizar.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnActulizar.ForeColor = Color.White;
+            btnActulizar.Location = new Point(3, 79);
+            btnActulizar.Name = "btnActulizar";
+            btnActulizar.Size = new Size(248, 36);
+            btnActulizar.TabIndex = 15;
+            btnActulizar.Text = "Actualizar Estudiante";
+            btnActulizar.UseVisualStyleBackColor = false;
             // 
-            // button12
+            // btnCrear
             // 
-            button12.BackColor = Color.RoyalBlue;
-            button12.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button12.ForeColor = Color.White;
-            button12.Location = new Point(12, 36);
-            button12.Name = "button12";
-            button12.Size = new Size(248, 35);
-            button12.TabIndex = 14;
-            button12.Text = "Crear Estudiante";
-            button12.UseVisualStyleBackColor = false;
+            btnCrear.BackColor = Color.RoyalBlue;
+            btnCrear.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCrear.ForeColor = Color.White;
+            btnCrear.Location = new Point(3, 23);
+            btnCrear.Name = "btnCrear";
+            btnCrear.Size = new Size(248, 35);
+            btnCrear.TabIndex = 14;
+            btnCrear.Text = "Crear Estudiante";
+            btnCrear.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(385, 26);
+            label2.Location = new Point(438, 60);
             label2.Name = "label2";
             label2.Size = new Size(59, 15);
             label2.TabIndex = 41;
             label2.Text = "Matricula";
+            // 
+            // Barra_Menu
+            // 
+            Barra_Menu.BackColor = Color.RoyalBlue;
+            Barra_Menu.Controls.Add(btnCerrar);
+            Barra_Menu.Dock = DockStyle.Top;
+            Barra_Menu.ImeMode = ImeMode.Disable;
+            Barra_Menu.Location = new Point(0, 0);
+            Barra_Menu.Name = "Barra_Menu";
+            Barra_Menu.Size = new Size(1055, 37);
+            Barra_Menu.TabIndex = 42;
+            // 
+            // btnCerrar
+            // 
+            btnCerrar.BackColor = Color.RoyalBlue;
+            btnCerrar.Image = (Image)resources.GetObject("btnCerrar.Image");
+            btnCerrar.Location = new Point(1027, 3);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(25, 25);
+            btnCerrar.SizeMode = PictureBoxSizeMode.Zoom;
+            btnCerrar.TabIndex = 46;
+            btnCerrar.TabStop = false;
+            btnCerrar.Click += btnCerrar_Click;
+            // 
+            // Panel
+            // 
+            Panel.BackColor = Color.WhiteSmoke;
+            Panel.Controls.Add(btnCrear);
+            Panel.Controls.Add(btnActulizar);
+            Panel.Controls.Add(btnEliminar);
+            Panel.Controls.Add(btnReporte);
+            Panel.Controls.Add(btnSalir);
+            Panel.Controls.Add(btnDigitar);
+            Panel.Dock = DockStyle.Left;
+            Panel.Location = new Point(0, 37);
+            Panel.Name = "Panel";
+            Panel.Size = new Size(261, 449);
+            Panel.TabIndex = 45;
             // 
             // Menu
             // 
@@ -161,33 +206,36 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1055, 486);
+            Controls.Add(Panel);
+            Controls.Add(Barra_Menu);
             Controls.Add(label2);
-            Controls.Add(button8);
-            Controls.Add(button9);
-            Controls.Add(button10);
-            Controls.Add(button11);
-            Controls.Add(button12);
             Controls.Add(dataGridView1);
-            Controls.Add(button7);
-            Controls.Add(button1);
+            Controls.Add(btnBuscarmenu);
             Controls.Add(textBox1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Menu";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Barra_Menu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
+            Panel.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
+        private Button btnBuscarmenu;
         private TextBox textBox1;
-        private Button button7;
+        private Button btnSalir;
         private DataGridView dataGridView1;
-        private Button button8;
-        private Button button9;
-        private Button button10;
-        private Button button11;
-        private Button button12;
+        private Button btnReporte;
+        private Button btnDigitar;
+        private Button btnEliminar;
+        private Button btnActulizar;
+        private Button btnCrear;
         private Label label2;
+        private Panel Barra_Menu;
+        private Panel Panel;
+        private PictureBox btnCerrar;
     }
 }

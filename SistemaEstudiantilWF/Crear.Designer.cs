@@ -28,11 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Crear));
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
@@ -59,75 +55,24 @@
             comboBox1 = new ComboBox();
             comboBox2 = new ComboBox();
             comboBox3 = new ComboBox();
-            button6 = new Button();
+            Barra_Creacion = new Panel();
+            btnCerrar = new PictureBox();
+            Panel = new Panel();
+            button12 = new Button();
+            button11 = new Button();
+            button10 = new Button();
+            button9 = new Button();
+            button13 = new Button();
+            button14 = new Button();
+            Barra_Creacion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
+            Panel.SuspendLayout();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.RoyalBlue;
-            button1.Cursor = Cursors.IBeam;
-            button1.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(32, 38);
-            button1.Name = "button1";
-            button1.Size = new Size(248, 35);
-            button1.TabIndex = 0;
-            button1.Text = "Crear Estudiante";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.RoyalBlue;
-            button2.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(32, 91);
-            button2.Name = "button2";
-            button2.Size = new Size(248, 36);
-            button2.TabIndex = 1;
-            button2.Text = "Actualizar Estudiante";
-            button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.RoyalBlue;
-            button3.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(32, 144);
-            button3.Name = "button3";
-            button3.Size = new Size(248, 38);
-            button3.TabIndex = 2;
-            button3.Text = "Eliminar Estudiante";
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.RoyalBlue;
-            button4.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(32, 197);
-            button4.Name = "button4";
-            button4.Size = new Size(248, 37);
-            button4.TabIndex = 3;
-            button4.Text = "Digitar Calificaciones de Estudiante";
-            button4.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            button5.BackColor = Color.RoyalBlue;
-            button5.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button5.ForeColor = Color.White;
-            button5.Location = new Point(32, 250);
-            button5.Name = "button5";
-            button5.Size = new Size(248, 42);
-            button5.TabIndex = 4;
-            button5.Text = "Reporte de Estidiante";
-            button5.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
             textBox1.BackColor = Color.FromArgb(230, 231, 233);
-            textBox1.Location = new Point(390, 45);
+            textBox1.Location = new Point(346, 70);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(198, 23);
             textBox1.TabIndex = 6;
@@ -135,7 +80,7 @@
             // textBox2
             // 
             textBox2.BackColor = Color.FromArgb(230, 231, 233);
-            textBox2.Location = new Point(390, 133);
+            textBox2.Location = new Point(346, 158);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(198, 23);
             textBox2.TabIndex = 7;
@@ -143,7 +88,7 @@
             // textBox3
             // 
             textBox3.BackColor = Color.FromArgb(230, 231, 233);
-            textBox3.Location = new Point(390, 224);
+            textBox3.Location = new Point(346, 249);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(198, 23);
             textBox3.TabIndex = 8;
@@ -151,7 +96,7 @@
             // textBox4
             // 
             textBox4.BackColor = Color.FromArgb(230, 231, 233);
-            textBox4.Location = new Point(610, 45);
+            textBox4.Location = new Point(566, 70);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(198, 23);
             textBox4.TabIndex = 9;
@@ -159,7 +104,7 @@
             // textBox5
             // 
             textBox5.BackColor = Color.FromArgb(230, 231, 233);
-            textBox5.Location = new Point(610, 133);
+            textBox5.Location = new Point(566, 158);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(198, 23);
             textBox5.TabIndex = 10;
@@ -167,7 +112,7 @@
             // textBox6
             // 
             textBox6.BackColor = Color.FromArgb(230, 231, 233);
-            textBox6.Location = new Point(610, 224);
+            textBox6.Location = new Point(566, 249);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(198, 23);
             textBox6.TabIndex = 11;
@@ -175,7 +120,7 @@
             // textBox7
             // 
             textBox7.BackColor = Color.FromArgb(230, 231, 233);
-            textBox7.Location = new Point(832, 45);
+            textBox7.Location = new Point(788, 70);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(198, 23);
             textBox7.TabIndex = 12;
@@ -183,7 +128,7 @@
             // textBox8
             // 
             textBox8.BackColor = Color.FromArgb(230, 231, 233);
-            textBox8.Location = new Point(832, 133);
+            textBox8.Location = new Point(788, 158);
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(198, 23);
             textBox8.TabIndex = 13;
@@ -191,7 +136,7 @@
             // textBox9
             // 
             textBox9.BackColor = Color.FromArgb(230, 231, 233);
-            textBox9.Location = new Point(832, 224);
+            textBox9.Location = new Point(788, 249);
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(198, 23);
             textBox9.TabIndex = 14;
@@ -226,7 +171,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(402, 21);
+            label1.Location = new Point(358, 46);
             label1.Name = "label1";
             label1.Size = new Size(20, 15);
             label1.TabIndex = 17;
@@ -237,7 +182,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(402, 115);
+            label2.Location = new Point(358, 140);
             label2.Name = "label2";
             label2.Size = new Size(52, 15);
             label2.TabIndex = 18;
@@ -248,7 +193,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(402, 200);
+            label3.Location = new Point(358, 225);
             label3.Name = "label3";
             label3.Size = new Size(123, 15);
             label3.TabIndex = 19;
@@ -260,7 +205,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(610, 21);
+            label4.Location = new Point(566, 46);
             label4.Name = "label4";
             label4.Size = new Size(59, 15);
             label4.TabIndex = 20;
@@ -271,7 +216,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.Black;
-            label5.Location = new Point(610, 115);
+            label5.Location = new Point(566, 140);
             label5.Name = "label5";
             label5.Size = new Size(33, 15);
             label5.TabIndex = 21;
@@ -282,7 +227,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.Black;
-            label6.Location = new Point(610, 200);
+            label6.Location = new Point(566, 225);
             label6.Name = "label6";
             label6.Size = new Size(38, 15);
             label6.TabIndex = 22;
@@ -293,7 +238,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.Black;
-            label7.Location = new Point(832, 22);
+            label7.Location = new Point(788, 47);
             label7.Name = "label7";
             label7.Size = new Size(53, 15);
             label7.TabIndex = 23;
@@ -304,7 +249,7 @@
             label8.AutoSize = true;
             label8.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label8.ForeColor = Color.Black;
-            label8.Location = new Point(832, 115);
+            label8.Location = new Point(788, 140);
             label8.Name = "label8";
             label8.Size = new Size(35, 15);
             label8.TabIndex = 24;
@@ -315,7 +260,7 @@
             label9.AutoSize = true;
             label9.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label9.ForeColor = Color.Black;
-            label9.Location = new Point(832, 200);
+            label9.Location = new Point(788, 225);
             label9.Name = "label9";
             label9.Size = new Size(123, 15);
             label9.TabIndex = 25;
@@ -326,7 +271,7 @@
             label10.AutoSize = true;
             label10.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label10.ForeColor = Color.Black;
-            label10.Location = new Point(448, 277);
+            label10.Location = new Point(404, 295);
             label10.Name = "label10";
             label10.Size = new Size(76, 15);
             label10.TabIndex = 26;
@@ -337,7 +282,7 @@
             label11.AutoSize = true;
             label11.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label11.ForeColor = Color.Black;
-            label11.Location = new Point(657, 277);
+            label11.Location = new Point(630, 295);
             label11.Name = "label11";
             label11.Size = new Size(76, 15);
             label11.TabIndex = 27;
@@ -349,7 +294,7 @@
             label12.AutoSize = true;
             label12.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label12.ForeColor = Color.Black;
-            label12.Location = new Point(856, 277);
+            label12.Location = new Point(829, 295);
             label12.Name = "label12";
             label12.Size = new Size(76, 15);
             label12.TabIndex = 28;
@@ -360,7 +305,7 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Matematica", "Naturales", "Sociales", "Lenguaje", "Ingles", "Deporte" });
-            comboBox1.Location = new Point(390, 309);
+            comboBox1.Location = new Point(363, 327);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(170, 23);
             comboBox1.TabIndex = 29;
@@ -370,7 +315,7 @@
             // 
             comboBox2.FormattingEnabled = true;
             comboBox2.Items.AddRange(new object[] { "Matematica", "Naturales", "Sociales", "Lenguaje", "Ingles", "Deporte" });
-            comboBox2.Location = new Point(610, 309);
+            comboBox2.Location = new Point(583, 327);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(170, 23);
             comboBox2.TabIndex = 30;
@@ -380,31 +325,129 @@
             // 
             comboBox3.FormattingEnabled = true;
             comboBox3.Items.AddRange(new object[] { "Matematica", "Naturales", "Sociales", "Lenguaje", "Ingles", "Deporte" });
-            comboBox3.Location = new Point(815, 309);
+            comboBox3.Location = new Point(788, 327);
             comboBox3.Name = "comboBox3";
             comboBox3.Size = new Size(170, 23);
             comboBox3.TabIndex = 31;
             comboBox3.Text = "Seleccione la asignatura";
             // 
-            // button6
+            // Barra_Creacion
             // 
-            button6.BackColor = Color.RoyalBlue;
-            button6.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button6.ForeColor = Color.White;
-            button6.Location = new Point(12, 420);
-            button6.Name = "button6";
-            button6.Size = new Size(177, 30);
-            button6.TabIndex = 32;
-            button6.Text = "Salir";
-            button6.UseVisualStyleBackColor = false;
+            Barra_Creacion.BackColor = Color.RoyalBlue;
+            Barra_Creacion.Controls.Add(btnCerrar);
+            Barra_Creacion.Dock = DockStyle.Top;
+            Barra_Creacion.Location = new Point(0, 0);
+            Barra_Creacion.Name = "Barra_Creacion";
+            Barra_Creacion.Size = new Size(1055, 37);
+            Barra_Creacion.TabIndex = 43;
+            // 
+            // btnCerrar
+            // 
+            btnCerrar.BackColor = Color.RoyalBlue;
+            btnCerrar.Image = (Image)resources.GetObject("btnCerrar.Image");
+            btnCerrar.Location = new Point(1027, 3);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(25, 25);
+            btnCerrar.SizeMode = PictureBoxSizeMode.Zoom;
+            btnCerrar.TabIndex = 47;
+            btnCerrar.TabStop = false;
+            btnCerrar.Click += btnCerrar_Click;
+            // 
+            // Panel
+            // 
+            Panel.BackColor = Color.WhiteSmoke;
+            Panel.Controls.Add(button12);
+            Panel.Controls.Add(button11);
+            Panel.Controls.Add(button10);
+            Panel.Controls.Add(button9);
+            Panel.Controls.Add(button13);
+            Panel.Controls.Add(button14);
+            Panel.Dock = DockStyle.Left;
+            Panel.Location = new Point(0, 37);
+            Panel.Name = "Panel";
+            Panel.Size = new Size(261, 449);
+            Panel.TabIndex = 46;
+            // 
+            // button12
+            // 
+            button12.BackColor = Color.RoyalBlue;
+            button12.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button12.ForeColor = Color.White;
+            button12.Location = new Point(3, 23);
+            button12.Name = "button12";
+            button12.Size = new Size(248, 35);
+            button12.TabIndex = 14;
+            button12.Text = "Crear Estudiante";
+            button12.UseVisualStyleBackColor = false;
+            // 
+            // button11
+            // 
+            button11.BackColor = Color.RoyalBlue;
+            button11.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button11.ForeColor = Color.White;
+            button11.Location = new Point(3, 79);
+            button11.Name = "button11";
+            button11.Size = new Size(248, 36);
+            button11.TabIndex = 15;
+            button11.Text = "Actualizar Estudiante";
+            button11.UseVisualStyleBackColor = false;
+            // 
+            // button10
+            // 
+            button10.BackColor = Color.RoyalBlue;
+            button10.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button10.ForeColor = Color.White;
+            button10.Location = new Point(3, 137);
+            button10.Name = "button10";
+            button10.Size = new Size(248, 38);
+            button10.TabIndex = 16;
+            button10.Text = "Eliminar Estudiante";
+            button10.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            button9.BackColor = Color.RoyalBlue;
+            button9.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button9.ForeColor = Color.White;
+            button9.Location = new Point(3, 249);
+            button9.Name = "button9";
+            button9.Size = new Size(248, 32);
+            button9.TabIndex = 18;
+            button9.Text = "Reporte de Estidiante";
+            button9.UseVisualStyleBackColor = false;
+            // 
+            // button13
+            // 
+            button13.BackColor = Color.RoyalBlue;
+            button13.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button13.ForeColor = Color.White;
+            button13.Location = new Point(12, 398);
+            button13.Name = "button13";
+            button13.Size = new Size(177, 30);
+            button13.TabIndex = 12;
+            button13.Text = "Salir";
+            button13.UseVisualStyleBackColor = false;
+            // 
+            // button14
+            // 
+            button14.BackColor = Color.RoyalBlue;
+            button14.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button14.ForeColor = Color.White;
+            button14.Location = new Point(3, 193);
+            button14.Name = "button14";
+            button14.Size = new Size(248, 34);
+            button14.TabIndex = 17;
+            button14.Text = "Digitar Calificaciones de Estudiante";
+            button14.UseVisualStyleBackColor = false;
             // 
             // Crear
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1042, 491);
-            Controls.Add(button6);
+            ClientSize = new Size(1055, 486);
+            Controls.Add(Panel);
+            Controls.Add(Barra_Creacion);
             Controls.Add(comboBox3);
             Controls.Add(comboBox2);
             Controls.Add(comboBox1);
@@ -431,24 +474,17 @@
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Crear";
             Load += Form4_Load;
+            Barra_Creacion.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
+            Panel.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
         private TextBox textBox1;
         private TextBox textBox2;
         private TextBox textBox3;
@@ -475,6 +511,14 @@
         private ComboBox comboBox1;
         private ComboBox comboBox2;
         private ComboBox comboBox3;
-        private Button button6;
+        private Panel Barra_Creacion;
+        private Panel Panel;
+        private Button button12;
+        private Button button11;
+        private Button button10;
+        private Button button9;
+        private Button button13;
+        private Button button14;
+        private PictureBox btnCerrar;
     }
 }

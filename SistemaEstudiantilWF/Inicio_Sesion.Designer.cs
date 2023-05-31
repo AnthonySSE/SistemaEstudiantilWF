@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio_Sesion));
             label2 = new Label();
             txtIdUsuario = new TextBox();
             label3 = new Label();
@@ -35,6 +36,8 @@
             btnAcceder = new Button();
             label4 = new Label();
             label1 = new Label();
+            btnCerrar = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
             SuspendLayout();
             // 
             // label2
@@ -110,12 +113,25 @@
             label1.TabIndex = 0;
             label1.Text = "Inicio de Sesión";
             // 
-            // Form1
+            // btnCerrar
+            // 
+            btnCerrar.BackColor = Color.White;
+            btnCerrar.Image = (Image)resources.GetObject("btnCerrar.Image");
+            btnCerrar.Location = new Point(297, 3);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(25, 25);
+            btnCerrar.SizeMode = PictureBoxSizeMode.Zoom;
+            btnCerrar.TabIndex = 7;
+            btnCerrar.TabStop = false;
+            btnCerrar.Click += btnCerrar_Click;
+            // 
+            // Inicio_Sesion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(325, 404);
+            Controls.Add(btnCerrar);
             Controls.Add(label4);
             Controls.Add(btnAcceder);
             Controls.Add(txtContrasena);
@@ -126,10 +142,11 @@
             Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(164, 165, 169);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form1";
+            Name = "Inicio_Sesion";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -142,5 +159,6 @@
         private Button btnAcceder;
         private Label label4;
         private Label label1;
+        private PictureBox btnCerrar;
     }
 }
