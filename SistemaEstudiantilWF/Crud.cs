@@ -49,9 +49,7 @@ namespace SistemaEstudiantilWF
             return null;
      
         }
-        ~Crud(){
-            conexion.Close();
-        }
+       
 
 
        
