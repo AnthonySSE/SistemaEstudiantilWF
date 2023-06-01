@@ -26,6 +26,6 @@ namespace SistemaEstudiantilWF
 
         public int CantidadMateria { get; set; }
 
-        public char UsuariId { get; set; }
+        public char UsuarioId { get; set; }
     }
 }
