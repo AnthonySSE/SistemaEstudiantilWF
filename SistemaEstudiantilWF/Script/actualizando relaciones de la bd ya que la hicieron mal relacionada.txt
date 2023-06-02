@@ -1,0 +1,16 @@
+ALTER TABLE AsignaturaEstudiante
+DROP CONSTRAINT FK_IdEstudiante
+
+
+ALTER TABLE AsignaturaEstudiante
+ALTER COLUMN IdEstudiante varchar(15)
+
+ALTER TABLE AsignaturaEstudiante
+ALTER COLUMN IdEstudiante INT
+
+
+ALTER TABLE Estudiante
+ ADD CONSTRAINT UQ_Estudiante_Id UNIQUE (Id)
+
+ ALTER TABLE AsignaturaEstudiante
+ADD CONSTRAINT FK_IdEstudiante FOREIGN KEY (IdEstudiante) REFERENCES Estudiante (Id)

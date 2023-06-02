@@ -1,0 +1,95 @@
+CREATE DATABASE SistemaEstudiantil
+
+USE SistemaEstudiantil
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE Asignatura(
+	[IdAsignatura] [int] IDENTITY(1,1) NOT NULL,
+	[Nombre] [varchar](30) NOT NULL,
+ CONSTRAINT [PK_IdAsignatura] PRIMARY KEY CLUSTERED 
+(
+	[IdAsignatura] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[AsignaturaEstudiante]    Script Date: 29/5/2023 12:36:50 a. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE AsignaturaEstudiante(
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[IdEstudiante] [varchar](15) NOT NULL,
+	[IdAsignatura] [int] NOT NULL,
+	[Calificacion] [decimal](2, 2) NOT NULL,
+ CONSTRAINT [PK_Id] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Estudiante]    Script Date: 29/5/2023 12:36:50 a. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE Estudiante(
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Matricula] [varchar](15) NOT NULL,
+	[Nombre] [varchar](30) NOT NULL,
+	[Apellidos] [varchar](30) NOT NULL,
+	[Edad] [int] NOT NULL,
+	[Sexo] [varchar](1) NOT NULL,
+	[FechaNacimiento] [date] NOT NULL,
+	[Curso] [varchar](25) NOT NULL,
+	[CantidadMateria] [int] NOT NULL,
+	[UsuarioId] [varchar](15) NOT NULL,
+ CONSTRAINT [PK_Matricula] PRIMARY KEY CLUSTERED 
+(
+	Matricula ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY],
+UNIQUE NONCLUSTERED 
+(
+	Matricula ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Usuario]    Script Date: 29/5/2023 12:36:50 a. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE Usuario(
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Nombre] [varchar](30) NOT NULL,
+	[Apellidos] [varchar](30) NOT NULL,
+	[IdUsuario] [varchar](15) NOT NULL,
+	[Contrasena] [varchar](64) NOT NULL,
+	[Rol] [varchar](30) NOT NULL,
+ CONSTRAINT [PK_IdUsuario] PRIMARY KEY CLUSTERED 
+(
+	IdUsuario ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE AsignaturaEstudiante  WITH CHECK ADD  CONSTRAINT FK_IdAsignatura FOREIGN KEY(IdAsignatura)
+REFERENCES Asignatura (IdAsignatura)
+GO
+ALTER TABLE AsignaturaEstudiante CHECK CONSTRAINT FK_IdAsignatura
+GO
+ALTER TABLE AsignaturaEstudiante  WITH CHECK ADD  CONSTRAINT FK_IdEstudiante FOREIGN KEY(IdEstudiante)
+REFERENCES Estudiante (Matricula)
+GO
+ALTER TABLE AsignaturaEstudiante CHECK CONSTRAINT FK_IdEstudiante
+GO
+ALTER TABLE Estudiante  WITH CHECK ADD  CONSTRAINT FK_UsuarioId FOREIGN KEY(UsuarioId)
+REFERENCES Usuario (IdUsuario)
+GO
+ALTER TABLE Estudiante CHECK CONSTRAINT FK_UsuarioId
+GO
+USE master
+GO
+ALTER DATABASE SistemaEstudiantil SET  READ_WRITE 
+GO

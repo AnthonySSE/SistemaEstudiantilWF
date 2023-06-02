@@ -28,109 +28,109 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label2 = new Label();
-            txtIdUsuario = new TextBox();
-            label3 = new Label();
-            txtContrasena = new TextBox();
-            btnAcceder = new Button();
-            label4 = new Label();
-            label1 = new Label();
-            SuspendLayout();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtIdUsuario = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtContrasena = new System.Windows.Forms.TextBox();
+            this.btnAcceder = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.ForeColor = Color.Black;
-            label2.Location = new Point(38, 96);
-            label2.Name = "label2";
-            label2.Size = new Size(63, 20);
-            label2.TabIndex = 1;
-            label2.Text = "Usuario";
-            label2.Click += label2_Click;
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(38, 96);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(49, 15);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Usuario";
             // 
             // txtIdUsuario
             // 
-            txtIdUsuario.BackColor = Color.FromArgb(230, 231, 233);
-            txtIdUsuario.Font = new Font("Nirmala UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtIdUsuario.Location = new Point(38, 119);
-            txtIdUsuario.Name = "txtIdUsuario";
-            txtIdUsuario.Size = new Size(256, 34);
-            txtIdUsuario.TabIndex = 2;
+            this.txtIdUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.txtIdUsuario.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtIdUsuario.Location = new System.Drawing.Point(38, 119);
+            this.txtIdUsuario.Name = "txtIdUsuario";
+            this.txtIdUsuario.Size = new System.Drawing.Size(256, 29);
+            this.txtIdUsuario.TabIndex = 2;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.ForeColor = Color.Black;
-            label3.Location = new Point(38, 166);
-            label3.Name = "label3";
-            label3.Size = new Size(88, 20);
-            label3.TabIndex = 3;
-            label3.Text = "Contraseña";
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(38, 166);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 15);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Contraseña";
             // 
             // txtContrasena
             // 
-            txtContrasena.BackColor = Color.FromArgb(230, 231, 233);
-            txtContrasena.Font = new Font("Nirmala UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtContrasena.Location = new Point(38, 189);
-            txtContrasena.Name = "txtContrasena";
-            txtContrasena.PasswordChar = '*';
-            txtContrasena.Size = new Size(256, 34);
-            txtContrasena.TabIndex = 4;
+            this.txtContrasena.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.txtContrasena.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtContrasena.Location = new System.Drawing.Point(38, 189);
+            this.txtContrasena.Name = "txtContrasena";
+            this.txtContrasena.PasswordChar = '*';
+            this.txtContrasena.Size = new System.Drawing.Size(256, 29);
+            this.txtContrasena.TabIndex = 4;
             // 
             // btnAcceder
             // 
-            btnAcceder.BackColor = Color.RoyalBlue;
-            btnAcceder.FlatStyle = FlatStyle.Flat;
-            btnAcceder.ForeColor = Color.White;
-            btnAcceder.Location = new Point(72, 241);
-            btnAcceder.Name = "btnAcceder";
-            btnAcceder.Size = new Size(198, 44);
-            btnAcceder.TabIndex = 5;
-            btnAcceder.Text = "Iniciar Sesión";
-            btnAcceder.UseVisualStyleBackColor = false;
-            btnAcceder.Click += button1_Click;
+            this.btnAcceder.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnAcceder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAcceder.ForeColor = System.Drawing.Color.White;
+            this.btnAcceder.Location = new System.Drawing.Point(72, 241);
+            this.btnAcceder.Name = "btnAcceder";
+            this.btnAcceder.Size = new System.Drawing.Size(198, 44);
+            this.btnAcceder.TabIndex = 5;
+            this.btnAcceder.Text = "Iniciar Sesión";
+            this.btnAcceder.UseVisualStyleBackColor = false;
+            this.btnAcceder.Click += new System.EventHandler(this.btnAcceder_Click);
             // 
             // label4
             // 
-            label4.Location = new Point(14, 314);
-            label4.Name = "label4";
-            label4.Size = new Size(281, 61);
-            label4.TabIndex = 6;
-            label4.Text = "Si no puede iniciar sesión, contacte al administrador";
+            this.label4.Location = new System.Drawing.Point(14, 314);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(281, 61);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Si no puede iniciar sesión, contacte al administrador";
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("MS UI Gothic", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.Blue;
-            label1.Location = new Point(38, 45);
-            label1.Name = "label1";
-            label1.Size = new Size(208, 27);
-            label1.TabIndex = 0;
-            label1.Text = "Inicio de Sesión";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(38, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(171, 22);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Inicio de Sesión";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(9F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(325, 404);
-            Controls.Add(label4);
-            Controls.Add(btnAcceder);
-            Controls.Add(txtContrasena);
-            Controls.Add(label3);
-            Controls.Add(txtIdUsuario);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            ForeColor = Color.FromArgb(164, 165, 169);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "Form1";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
-            Load += Form1_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(325, 404);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.btnAcceder);
+            this.Controls.Add(this.txtContrasena);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtIdUsuario);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load_1);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
