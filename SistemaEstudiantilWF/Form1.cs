@@ -2,6 +2,7 @@ using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ModernGUI_V3;
 using System.Data;
 
 namespace SistemaEstudiantilWF
@@ -48,5 +49,42 @@ namespace SistemaEstudiantilWF
         {
 
         }
+
+        private void btnAcceder_Click(object sender, EventArgs e)
+        {
+           
+
+            string username = txtIdUsuario.Text;
+            string password = txtContrasena.Text;
+
+            // Verificar las credenciales en la base de datos
+            string verificarCredencialesQuery = "SELECT COUNT(*) FROM Usuario WHERE IdUsuario = @Username AND Contrasena = @Password";
+            SqlCommand cmdVerificarCredenciales = new SqlCommand(verificarCredencialesQuery, Conexion.getinstance().getConexion());
+            cmdVerificarCredenciales.Parameters.AddWithValue("@Username", username);
+            cmdVerificarCredenciales.Parameters.AddWithValue("@Password", password);
+            int count = Convert.ToInt32(cmdVerificarCredenciales.ExecuteScalar());
+
+            if (count > 0)
+            {
+                // Las credenciales son válidas, mostrar el formulario principal o realizar otras operaciones necesarias
+                MessageBox.Show("Inicio de sesión exitoso");
+                // abrir el formulario principal
+                FormPrincipal frm = new FormPrincipal();
+
+                frm.Show();
+            }
+            else
+            {
+                // Las credenciales son inválidas, mostrar un mensaje de error
+                MessageBox.Show("Usuario o contraseña incorrectos");
+            }
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+     
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using ModernGUI_V3;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -23,7 +24,7 @@ namespace SistemaEstudiantilWF
 
             try
             {
-                string consulta = $"select * from usuario where idusuario = '{IdUsuario}' and contrasena = '{Contrasena}'";
+                string consulta = $"select * from Usuario where idusuario = '{IdUsuario}' and Contrasena = '{Contrasena}'";
                 SqlDataAdapter sda = new SqlDataAdapter(consulta, conexion);
                 DataTable dt = new DataTable();
                 sda.Fill (dt);
@@ -34,6 +35,8 @@ namespace SistemaEstudiantilWF
                     Contrasena = Contrasena;
 
                     MessageBox.Show("Logueo exitoso");
+
+                   
                 }
 
                 else
