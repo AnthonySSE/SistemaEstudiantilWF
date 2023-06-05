@@ -28,375 +28,396 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_CrearEstudiante = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_cantidadmaterias = new System.Windows.Forms.TextBox();
-            this.txt_nombre = new System.Windows.Forms.TextBox();
-            this.txt_curso = new System.Windows.Forms.TextBox();
-            this.txt_edad = new System.Windows.Forms.TextBox();
-            this.txt_matricula = new System.Windows.Forms.TextBox();
-            this.txt_apellido = new System.Windows.Forms.TextBox();
-            this.txt_id = new System.Windows.Forms.TextBox();
-            this.dtp_fechanacimiento = new System.Windows.Forms.DateTimePicker();
-            this.txt_usuarioid = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.btn_limpiar = new System.Windows.Forms.Button();
-            this.cmb_sexo = new System.Windows.Forms.ComboBox();
-            this.btn_actualizar = new System.Windows.Forms.Button();
-            this.btn_eliminar = new System.Windows.Forms.Button();
-            this.txt_buscar = new System.Windows.Forms.TextBox();
-            this.cmb_buscar = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btn_mostrar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            btn_CrearEstudiante = new Button();
+            label9 = new Label();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            txt_cantidadmaterias = new TextBox();
+            txt_nombre = new TextBox();
+            txt_curso = new TextBox();
+            txt_edad = new TextBox();
+            txt_matricula = new TextBox();
+            txt_apellido = new TextBox();
+            txt_id = new TextBox();
+            dtp_fechanacimiento = new DateTimePicker();
+            txt_usuarioid = new TextBox();
+            label10 = new Label();
+            btn_limpiar = new Button();
+            cmb_sexo = new ComboBox();
+            btn_actualizar = new Button();
+            btn_eliminar = new Button();
+            txt_buscar = new TextBox();
+            cmb_buscar = new ComboBox();
+            label11 = new Label();
+            dataGridView1 = new DataGridView();
+            btn_mostrar = new Button();
+            errorProvider = new ErrorProvider(components);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider).BeginInit();
+            SuspendLayout();
             // 
             // btn_CrearEstudiante
             // 
-            this.btn_CrearEstudiante.Location = new System.Drawing.Point(10, 341);
-            this.btn_CrearEstudiante.Name = "btn_CrearEstudiante";
-            this.btn_CrearEstudiante.Size = new System.Drawing.Size(179, 55);
-            this.btn_CrearEstudiante.TabIndex = 0;
-            this.btn_CrearEstudiante.Text = "Crear Estudiante";
-            this.btn_CrearEstudiante.UseVisualStyleBackColor = true;
-            this.btn_CrearEstudiante.Click += new System.EventHandler(this.button1_Click);
+            btn_CrearEstudiante.Location = new Point(11, 455);
+            btn_CrearEstudiante.Margin = new Padding(3, 4, 3, 4);
+            btn_CrearEstudiante.Name = "btn_CrearEstudiante";
+            btn_CrearEstudiante.Size = new Size(205, 73);
+            btn_CrearEstudiante.TabIndex = 0;
+            btn_CrearEstudiante.Text = "Crear Estudiante";
+            btn_CrearEstudiante.UseVisualStyleBackColor = true;
+            btn_CrearEstudiante.Click += button1_Click;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(452, 188);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(123, 15);
-            this.label9.TabIndex = 49;
-            this.label9.Text = "Cantidad de Materias";
+            label9.AutoSize = true;
+            label9.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.ForeColor = Color.Black;
+            label9.Location = new Point(517, 251);
+            label9.Name = "label9";
+            label9.Size = new Size(157, 20);
+            label9.TabIndex = 49;
+            label9.Text = "Cantidad de Materias";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(470, 103);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 15);
-            this.label8.TabIndex = 48;
-            this.label8.Text = "Sexo";
+            label8.AutoSize = true;
+            label8.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.ForeColor = Color.Black;
+            label8.Location = new Point(537, 137);
+            label8.Name = "label8";
+            label8.Size = new Size(42, 20);
+            label8.TabIndex = 48;
+            label8.Text = "Sexo";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(452, 10);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 15);
-            this.label7.TabIndex = 47;
-            this.label7.Text = "Nombre";
+            label7.AutoSize = true;
+            label7.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = Color.Black;
+            label7.Location = new Point(517, 13);
+            label7.Name = "label7";
+            label7.Size = new Size(67, 20);
+            label7.TabIndex = 47;
+            label7.Text = "Nombre";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(230, 188);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 15);
-            this.label6.TabIndex = 46;
-            this.label6.Text = "Curso";
+            label6.AutoSize = true;
+            label6.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.ForeColor = Color.Black;
+            label6.Location = new Point(263, 251);
+            label6.Name = "label6";
+            label6.Size = new Size(49, 20);
+            label6.TabIndex = 46;
+            label6.Text = "Curso";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(230, 103);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(33, 15);
-            this.label5.TabIndex = 45;
-            this.label5.Text = "Edad";
+            label5.AutoSize = true;
+            label5.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.Black;
+            label5.Location = new Point(263, 137);
+            label5.Name = "label5";
+            label5.Size = new Size(43, 20);
+            label5.TabIndex = 45;
+            label5.Text = "Edad";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(230, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 15);
-            this.label4.TabIndex = 44;
-            this.label4.Text = "Matricula";
+            label4.AutoSize = true;
+            label4.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(263, 12);
+            label4.Name = "label4";
+            label4.Size = new Size(75, 20);
+            label4.TabIndex = 44;
+            label4.Text = "Matricula";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(22, 188);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 15);
-            this.label3.TabIndex = 43;
-            this.label3.Text = "Fecha de Nacimiento";
+            label3.AutoSize = true;
+            label3.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(25, 251);
+            label3.Name = "label3";
+            label3.Size = new Size(155, 20);
+            label3.TabIndex = 43;
+            label3.Text = "Fecha de Nacimiento";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(22, 103);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 15);
-            this.label2.TabIndex = 42;
-            this.label2.Text = "Apellido";
+            label2.AutoSize = true;
+            label2.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(25, 137);
+            label2.Name = "label2";
+            label2.Size = new Size(67, 20);
+            label2.TabIndex = 42;
+            label2.Text = "Apellido";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(22, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 15);
-            this.label1.TabIndex = 41;
-            this.label1.Text = "ID";
+            label1.AutoSize = true;
+            label1.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(25, 12);
+            label1.Name = "label1";
+            label1.Size = new Size(25, 20);
+            label1.TabIndex = 41;
+            label1.Text = "ID";
             // 
             // txt_cantidadmaterias
             // 
-            this.txt_cantidadmaterias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txt_cantidadmaterias.Location = new System.Drawing.Point(452, 212);
-            this.txt_cantidadmaterias.MaxLength = 2;
-            this.txt_cantidadmaterias.Name = "txt_cantidadmaterias";
-            this.txt_cantidadmaterias.Size = new System.Drawing.Size(198, 23);
-            this.txt_cantidadmaterias.TabIndex = 40;
+            txt_cantidadmaterias.BackColor = Color.FromArgb(230, 231, 233);
+            txt_cantidadmaterias.Location = new Point(517, 283);
+            txt_cantidadmaterias.Margin = new Padding(3, 4, 3, 4);
+            txt_cantidadmaterias.MaxLength = 2;
+            txt_cantidadmaterias.Name = "txt_cantidadmaterias";
+            txt_cantidadmaterias.Size = new Size(226, 27);
+            txt_cantidadmaterias.TabIndex = 40;
             // 
             // txt_nombre
             // 
-            this.txt_nombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txt_nombre.Location = new System.Drawing.Point(452, 33);
-            this.txt_nombre.MaxLength = 30;
-            this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(198, 23);
-            this.txt_nombre.TabIndex = 38;
+            txt_nombre.BackColor = Color.FromArgb(230, 231, 233);
+            txt_nombre.Location = new Point(517, 44);
+            txt_nombre.Margin = new Padding(3, 4, 3, 4);
+            txt_nombre.MaxLength = 30;
+            txt_nombre.Name = "txt_nombre";
+            txt_nombre.Size = new Size(226, 27);
+            txt_nombre.TabIndex = 38;
             // 
             // txt_curso
             // 
-            this.txt_curso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txt_curso.Location = new System.Drawing.Point(230, 212);
-            this.txt_curso.MaxLength = 25;
-            this.txt_curso.Name = "txt_curso";
-            this.txt_curso.Size = new System.Drawing.Size(198, 23);
-            this.txt_curso.TabIndex = 37;
+            txt_curso.BackColor = Color.FromArgb(230, 231, 233);
+            txt_curso.Location = new Point(263, 283);
+            txt_curso.Margin = new Padding(3, 4, 3, 4);
+            txt_curso.MaxLength = 25;
+            txt_curso.Name = "txt_curso";
+            txt_curso.Size = new Size(226, 27);
+            txt_curso.TabIndex = 37;
             // 
             // txt_edad
             // 
-            this.txt_edad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txt_edad.Location = new System.Drawing.Point(230, 121);
-            this.txt_edad.MaxLength = 3;
-            this.txt_edad.Name = "txt_edad";
-            this.txt_edad.Size = new System.Drawing.Size(198, 23);
-            this.txt_edad.TabIndex = 36;
+            txt_edad.BackColor = Color.FromArgb(230, 231, 233);
+            txt_edad.Location = new Point(263, 161);
+            txt_edad.Margin = new Padding(3, 4, 3, 4);
+            txt_edad.MaxLength = 3;
+            txt_edad.Name = "txt_edad";
+            txt_edad.Size = new Size(226, 27);
+            txt_edad.TabIndex = 36;
             // 
             // txt_matricula
             // 
-            this.txt_matricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txt_matricula.Location = new System.Drawing.Point(230, 33);
-            this.txt_matricula.MaxLength = 15;
-            this.txt_matricula.Name = "txt_matricula";
-            this.txt_matricula.Size = new System.Drawing.Size(198, 23);
-            this.txt_matricula.TabIndex = 35;
+            txt_matricula.BackColor = Color.FromArgb(230, 231, 233);
+            txt_matricula.Location = new Point(263, 44);
+            txt_matricula.Margin = new Padding(3, 4, 3, 4);
+            txt_matricula.MaxLength = 15;
+            txt_matricula.Name = "txt_matricula";
+            txt_matricula.Size = new Size(226, 27);
+            txt_matricula.TabIndex = 35;
             // 
             // txt_apellido
             // 
-            this.txt_apellido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txt_apellido.Location = new System.Drawing.Point(10, 121);
-            this.txt_apellido.MaxLength = 30;
-            this.txt_apellido.Name = "txt_apellido";
-            this.txt_apellido.Size = new System.Drawing.Size(198, 23);
-            this.txt_apellido.TabIndex = 33;
+            txt_apellido.BackColor = Color.FromArgb(230, 231, 233);
+            txt_apellido.Location = new Point(11, 161);
+            txt_apellido.Margin = new Padding(3, 4, 3, 4);
+            txt_apellido.MaxLength = 30;
+            txt_apellido.Name = "txt_apellido";
+            txt_apellido.Size = new Size(226, 27);
+            txt_apellido.TabIndex = 33;
             // 
             // txt_id
             // 
-            this.txt_id.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txt_id.Location = new System.Drawing.Point(10, 33);
-            this.txt_id.MaxLength = 3;
-            this.txt_id.Name = "txt_id";
-            this.txt_id.ReadOnly = true;
-            this.txt_id.Size = new System.Drawing.Size(198, 23);
-            this.txt_id.TabIndex = 32;
+            txt_id.BackColor = Color.FromArgb(230, 231, 233);
+            txt_id.Location = new Point(11, 44);
+            txt_id.Margin = new Padding(3, 4, 3, 4);
+            txt_id.MaxLength = 3;
+            txt_id.Name = "txt_id";
+            txt_id.ReadOnly = true;
+            txt_id.Size = new Size(226, 27);
+            txt_id.TabIndex = 32;
             // 
             // dtp_fechanacimiento
             // 
-            this.dtp_fechanacimiento.Location = new System.Drawing.Point(12, 215);
-            this.dtp_fechanacimiento.Name = "dtp_fechanacimiento";
-            this.dtp_fechanacimiento.Size = new System.Drawing.Size(196, 23);
-            this.dtp_fechanacimiento.TabIndex = 50;
+            dtp_fechanacimiento.Location = new Point(14, 287);
+            dtp_fechanacimiento.Margin = new Padding(3, 4, 3, 4);
+            dtp_fechanacimiento.Name = "dtp_fechanacimiento";
+            dtp_fechanacimiento.Size = new Size(223, 27);
+            dtp_fechanacimiento.TabIndex = 50;
             // 
             // txt_usuarioid
             // 
-            this.txt_usuarioid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txt_usuarioid.Location = new System.Drawing.Point(10, 297);
-            this.txt_usuarioid.MaxLength = 15;
-            this.txt_usuarioid.Name = "txt_usuarioid";
-            this.txt_usuarioid.Size = new System.Drawing.Size(198, 23);
-            this.txt_usuarioid.TabIndex = 51;
+            txt_usuarioid.BackColor = Color.FromArgb(230, 231, 233);
+            txt_usuarioid.Location = new Point(11, 396);
+            txt_usuarioid.Margin = new Padding(3, 4, 3, 4);
+            txt_usuarioid.MaxLength = 15;
+            txt_usuarioid.Name = "txt_usuarioid";
+            txt_usuarioid.Size = new Size(226, 27);
+            txt_usuarioid.TabIndex = 51;
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(22, 270);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(65, 15);
-            this.label10.TabIndex = 52;
-            this.label10.Text = "Usuario ID";
+            label10.AutoSize = true;
+            label10.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.ForeColor = Color.Black;
+            label10.Location = new Point(25, 360);
+            label10.Name = "label10";
+            label10.Size = new Size(83, 20);
+            label10.TabIndex = 52;
+            label10.Text = "Usuario ID";
             // 
             // btn_limpiar
             // 
-            this.btn_limpiar.Location = new System.Drawing.Point(679, 16);
-            this.btn_limpiar.Name = "btn_limpiar";
-            this.btn_limpiar.Size = new System.Drawing.Size(179, 55);
-            this.btn_limpiar.TabIndex = 53;
-            this.btn_limpiar.Text = "Limpiar";
-            this.btn_limpiar.UseVisualStyleBackColor = true;
-            this.btn_limpiar.Click += new System.EventHandler(this.btn_limpiar_Click);
+            btn_limpiar.Location = new Point(776, 21);
+            btn_limpiar.Margin = new Padding(3, 4, 3, 4);
+            btn_limpiar.Name = "btn_limpiar";
+            btn_limpiar.Size = new Size(205, 73);
+            btn_limpiar.TabIndex = 53;
+            btn_limpiar.Text = "Limpiar";
+            btn_limpiar.UseVisualStyleBackColor = true;
+            btn_limpiar.Click += btn_limpiar_Click;
             // 
             // cmb_sexo
             // 
-            this.cmb_sexo.FormattingEnabled = true;
-            this.cmb_sexo.Items.AddRange(new object[] {
-            "M",
-            "F"});
-            this.cmb_sexo.Location = new System.Drawing.Point(452, 121);
-            this.cmb_sexo.Name = "cmb_sexo";
-            this.cmb_sexo.Size = new System.Drawing.Size(76, 23);
-            this.cmb_sexo.TabIndex = 54;
-            this.cmb_sexo.SelectedIndexChanged += new System.EventHandler(this.cmb_sexo_SelectedIndexChanged);
+            cmb_sexo.FormattingEnabled = true;
+            cmb_sexo.Items.AddRange(new object[] { "M", "F" });
+            cmb_sexo.Location = new Point(517, 161);
+            cmb_sexo.Margin = new Padding(3, 4, 3, 4);
+            cmb_sexo.Name = "cmb_sexo";
+            cmb_sexo.Size = new Size(86, 28);
+            cmb_sexo.TabIndex = 54;
+            cmb_sexo.SelectedIndexChanged += cmb_sexo_SelectedIndexChanged;
             // 
             // btn_actualizar
             // 
-            this.btn_actualizar.Location = new System.Drawing.Point(230, 341);
-            this.btn_actualizar.Name = "btn_actualizar";
-            this.btn_actualizar.Size = new System.Drawing.Size(179, 55);
-            this.btn_actualizar.TabIndex = 55;
-            this.btn_actualizar.Text = "Actualizar";
-            this.btn_actualizar.UseVisualStyleBackColor = true;
-            this.btn_actualizar.Click += new System.EventHandler(this.button1_Click_1);
+            btn_actualizar.Location = new Point(263, 455);
+            btn_actualizar.Margin = new Padding(3, 4, 3, 4);
+            btn_actualizar.Name = "btn_actualizar";
+            btn_actualizar.Size = new Size(205, 73);
+            btn_actualizar.TabIndex = 55;
+            btn_actualizar.Text = "Actualizar";
+            btn_actualizar.UseVisualStyleBackColor = true;
+            btn_actualizar.Click += button1_Click_1;
             // 
             // btn_eliminar
             // 
-            this.btn_eliminar.Location = new System.Drawing.Point(452, 341);
-            this.btn_eliminar.Name = "btn_eliminar";
-            this.btn_eliminar.Size = new System.Drawing.Size(179, 55);
-            this.btn_eliminar.TabIndex = 56;
-            this.btn_eliminar.Text = "Eliminar";
-            this.btn_eliminar.UseVisualStyleBackColor = true;
-            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
+            btn_eliminar.Location = new Point(517, 455);
+            btn_eliminar.Margin = new Padding(3, 4, 3, 4);
+            btn_eliminar.Name = "btn_eliminar";
+            btn_eliminar.Size = new Size(205, 73);
+            btn_eliminar.TabIndex = 56;
+            btn_eliminar.Text = "Eliminar";
+            btn_eliminar.UseVisualStyleBackColor = true;
+            btn_eliminar.Click += btn_eliminar_Click;
             // 
             // txt_buscar
             // 
-            this.txt_buscar.Location = new System.Drawing.Point(956, 103);
-            this.txt_buscar.MaxLength = 50;
-            this.txt_buscar.Name = "txt_buscar";
-            this.txt_buscar.Size = new System.Drawing.Size(238, 23);
-            this.txt_buscar.TabIndex = 58;
-            this.txt_buscar.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            txt_buscar.Location = new Point(1093, 137);
+            txt_buscar.Margin = new Padding(3, 4, 3, 4);
+            txt_buscar.MaxLength = 50;
+            txt_buscar.Name = "txt_buscar";
+            txt_buscar.Size = new Size(271, 27);
+            txt_buscar.TabIndex = 58;
+            txt_buscar.TextChanged += textBox1_TextChanged;
             // 
             // cmb_buscar
             // 
-            this.cmb_buscar.FormattingEnabled = true;
-            this.cmb_buscar.Items.AddRange(new object[] {
-            "Matricula",
-            "Nombre",
-            "Apellidos",
-            "UsuarioId"});
-            this.cmb_buscar.Location = new System.Drawing.Point(1212, 103);
-            this.cmb_buscar.Name = "cmb_buscar";
-            this.cmb_buscar.Size = new System.Drawing.Size(76, 23);
-            this.cmb_buscar.TabIndex = 59;
-            this.cmb_buscar.Text = "Matricula";
+            cmb_buscar.FormattingEnabled = true;
+            cmb_buscar.Items.AddRange(new object[] { "Matricula", "Nombre", "Apellidos", "UsuarioId" });
+            cmb_buscar.Location = new Point(1385, 137);
+            cmb_buscar.Margin = new Padding(3, 4, 3, 4);
+            cmb_buscar.Name = "cmb_buscar";
+            cmb_buscar.Size = new Size(86, 28);
+            cmb_buscar.TabIndex = 59;
+            cmb_buscar.Text = "Matricula";
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(987, 75);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(105, 15);
-            this.label11.TabIndex = 60;
-            this.label11.Text = "Buscar Estudiante";
+            label11.AutoSize = true;
+            label11.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.ForeColor = Color.Black;
+            label11.Location = new Point(1128, 100);
+            label11.Name = "label11";
+            label11.Size = new Size(134, 20);
+            label11.TabIndex = 60;
+            label11.Text = "Buscar Estudiante";
             // 
             // dataGridView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 446);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(1184, 364);
-            this.dataGridView1.TabIndex = 61;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(11, 595);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(1353, 485);
+            dataGridView1.TabIndex = 61;
             // 
             // btn_mostrar
             // 
-            this.btn_mostrar.Location = new System.Drawing.Point(679, 341);
-            this.btn_mostrar.Name = "btn_mostrar";
-            this.btn_mostrar.Size = new System.Drawing.Size(179, 55);
-            this.btn_mostrar.TabIndex = 62;
-            this.btn_mostrar.Text = "Mostrar";
-            this.btn_mostrar.UseVisualStyleBackColor = true;
-            this.btn_mostrar.Click += new System.EventHandler(this.btn_mostrar_Click);
+            btn_mostrar.Location = new Point(776, 455);
+            btn_mostrar.Margin = new Padding(3, 4, 3, 4);
+            btn_mostrar.Name = "btn_mostrar";
+            btn_mostrar.Size = new Size(205, 73);
+            btn_mostrar.TabIndex = 62;
+            btn_mostrar.Text = "Mostrar";
+            btn_mostrar.UseVisualStyleBackColor = true;
+            btn_mostrar.Click += btn_mostrar_Click;
+            // 
+            // errorProvider
+            // 
+            errorProvider.ContainerControl = this;
             // 
             // CreacionEstudiante
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1475, 848);
-            this.Controls.Add(this.btn_mostrar);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.cmb_buscar);
-            this.Controls.Add(this.txt_buscar);
-            this.Controls.Add(this.btn_eliminar);
-            this.Controls.Add(this.btn_actualizar);
-            this.Controls.Add(this.cmb_sexo);
-            this.Controls.Add(this.btn_limpiar);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.txt_usuarioid);
-            this.Controls.Add(this.dtp_fechanacimiento);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txt_cantidadmaterias);
-            this.Controls.Add(this.txt_nombre);
-            this.Controls.Add(this.txt_curso);
-            this.Controls.Add(this.txt_edad);
-            this.Controls.Add(this.txt_matricula);
-            this.Controls.Add(this.txt_apellido);
-            this.Controls.Add(this.txt_id);
-            this.Controls.Add(this.btn_CrearEstudiante);
-            this.Name = "CreacionEstudiante";
-            this.Text = "Form3";
-            this.Load += new System.EventHandler(this.Form3_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(1686, 1055);
+            Controls.Add(btn_mostrar);
+            Controls.Add(dataGridView1);
+            Controls.Add(label11);
+            Controls.Add(cmb_buscar);
+            Controls.Add(txt_buscar);
+            Controls.Add(btn_eliminar);
+            Controls.Add(btn_actualizar);
+            Controls.Add(cmb_sexo);
+            Controls.Add(btn_limpiar);
+            Controls.Add(label10);
+            Controls.Add(txt_usuarioid);
+            Controls.Add(dtp_fechanacimiento);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(txt_cantidadmaterias);
+            Controls.Add(txt_nombre);
+            Controls.Add(txt_curso);
+            Controls.Add(txt_edad);
+            Controls.Add(txt_matricula);
+            Controls.Add(txt_apellido);
+            Controls.Add(txt_id);
+            Controls.Add(btn_CrearEstudiante);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "CreacionEstudiante";
+            Text = "Form3";
+            Load += Form3_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -430,5 +451,6 @@
         private Label label11;
         private DataGridView dataGridView1;
         private Button btn_mostrar;
+        private ErrorProvider errorProvider;
     }
 }

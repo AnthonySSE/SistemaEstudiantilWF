@@ -24,7 +24,7 @@ namespace SistemaEstudiantilWF
             timer1.Stop();
 
             // Cerrar la aplicación
-            Application.Exit();
+            Environment.Exit(0);
 
         }
 

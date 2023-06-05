@@ -13,7 +13,7 @@ namespace SistemaEstudiantilWF
 {
     public partial class CreacionEstudiante : Form
     {
-        
+
         public CreacionEstudiante()
         {
             InitializeComponent();
@@ -27,6 +27,7 @@ namespace SistemaEstudiantilWF
         private void button1_Click(object sender, EventArgs e)
         {
 
+
             string matricula = txt_matricula.Text;
             string nombre = txt_nombre.Text;
             string apellido = txt_apellido.Text;
@@ -37,38 +38,38 @@ namespace SistemaEstudiantilWF
             int cantidadMateria = Convert.ToInt32(txt_cantidadmaterias.Text);
             string usuarioid = txt_usuarioid.Text;
 
-           
+
 
 
             string insertar = "INSERT INTO Estudiante (Matricula, Nombre, Apellidos, Edad, Sexo, FechaNacimiento, Curso, CantidadMateria, UsuarioId)" +
                 "VALUES (@Matricula, @Nombre, @Apellidos, @Edad, @Sexo, @FechaNacimiento, @Curso, @CantidadMateria, @UsuarioId)";
-                SqlCommand cmd = new SqlCommand(insertar,  Conexion.getinstance().getConexion());
-                cmd.Parameters.AddWithValue("@Matricula", txt_matricula.Text);
-                cmd.Parameters.AddWithValue("@Nombre", txt_nombre.Text);
-                cmd.Parameters.AddWithValue("@Apellidos", txt_apellido.Text);
-                cmd.Parameters.AddWithValue("@Edad", txt_edad.Text);
-                cmd.Parameters.AddWithValue("@Sexo", cmb_sexo.Text);
-                cmd.Parameters.AddWithValue("@FechaNacimiento", dtp_fechanacimiento.Value);
-                cmd.Parameters.AddWithValue("@Curso", txt_curso.Text);
-                cmd.Parameters.AddWithValue("@CantidadMateria", txt_cantidadmaterias.Text);
-                cmd.Parameters.AddWithValue("@UsuarioId", txt_usuarioid.Text);
-          
+            SqlCommand cmd = new SqlCommand(insertar, Conexion.getinstance().getConexion());
+            cmd.Parameters.AddWithValue("@Matricula", txt_matricula.Text);
+            cmd.Parameters.AddWithValue("@Nombre", txt_nombre.Text);
+            cmd.Parameters.AddWithValue("@Apellidos", txt_apellido.Text);
+            cmd.Parameters.AddWithValue("@Edad", txt_edad.Text);
+            cmd.Parameters.AddWithValue("@Sexo", cmb_sexo.Text);
+            cmd.Parameters.AddWithValue("@FechaNacimiento", dtp_fechanacimiento.Value);
+            cmd.Parameters.AddWithValue("@Curso", txt_curso.Text);
+            cmd.Parameters.AddWithValue("@CantidadMateria", txt_cantidadmaterias.Text);
+            cmd.Parameters.AddWithValue("@UsuarioId", txt_usuarioid.Text);
+
             try
             {
                 cmd.ExecuteNonQuery();
-              
+
 
                 MessageBox.Show("Estudiante creado correctamente.");
             }
             catch (Exception ex)
             {
-                    MessageBox.Show(ex.Message);
-                
+                MessageBox.Show(ex.Message);
+
             }
-           
 
 
-         }
+
+        }
 
         private void btn_limpiar_Click(object sender, EventArgs e)
         {
@@ -76,7 +77,7 @@ namespace SistemaEstudiantilWF
             txt_nombre.Text = "";
             txt_apellido.Text = "";
             txt_edad.Text = "";
-            cmb_sexo.Items.Clear();
+            cmb_sexo.Text = "";
             dtp_fechanacimiento.Value = DateTime.Today;
             txt_curso.Text = "";
             txt_usuarioid.Text = "";
@@ -91,7 +92,7 @@ namespace SistemaEstudiantilWF
         private void button1_Click_1(object sender, EventArgs e)
         {
             string actualizar = "UPDATE Estudiante SET Nombre=@Nombre, Apellidos=@Apellidos, Edad=@Edad, Sexo=@Sexo, FechaNacimiento=FechaNacimiento, Curso=@Curso, CantidadMateria=@CantidadMateria, UsuarioId=@UsuarioId where UsuarioId = @UsuarioId ";
-            
+
             SqlCommand cmd = new SqlCommand(actualizar, Conexion.getinstance().getConexion());
             cmd.Parameters.AddWithValue("@Nombre", txt_nombre.Text);
             cmd.Parameters.AddWithValue("@Apellidos", txt_apellido.Text);
@@ -101,7 +102,7 @@ namespace SistemaEstudiantilWF
             cmd.Parameters.AddWithValue("@Curso", txt_curso.Text);
             cmd.Parameters.AddWithValue("@CantidadMateria", txt_cantidadmaterias.Text);
             cmd.Parameters.AddWithValue("@UsuarioId", txt_usuarioid.Text);
-          
+
 
             try
             {
@@ -158,7 +159,7 @@ namespace SistemaEstudiantilWF
             adapter.Fill(dataSet, "Estudiante");
             dataGridView1.DataSource = dataSet.Tables["Estudiante"];
 
-          
+
         }
 
         private void bindingSource1_CurrentChanged(object sender, EventArgs e)

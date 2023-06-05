@@ -20,37 +20,37 @@ namespace SistemaEstudiantilWF
 
         private void btn_limpiar_Click(object sender, EventArgs e)
         {
-            txt_id.Text = "";  
+            txt_id.Text = "";
             txt_nombre.Text = "";
             txt_apellido.Text = "";
             txt_IdUsuario.Text = "";
             txt_contraseña.Text = "";
-            cmb_rol.Items.Clear();
+            cmb_rol.Text = "";
 
         }
 
         private void btn_crearusuario_Click(object sender, EventArgs e)
         {
-            
+
             string nombre = txt_nombre.Text;
             string apellido = txt_apellido.Text;
             string idusuario = txt_IdUsuario.Text;
             string contraseña = txt_contraseña.Text;
             string rol = cmb_rol.SelectedItem.ToString();
-           
+
 
 
 
             string query = "INSERT INTO Usuario (Nombre, Apellidos, IdUsuario, Contrasena, Rol)" +
                 "VALUES (@Nombre, @Apellidos, @IdUsuario, @Contrasena, @Rol)";
-            SqlCommand cmd = new SqlCommand(query, Conexion.getinstance().getConexion());  
+            SqlCommand cmd = new SqlCommand(query, Conexion.getinstance().getConexion());
 
             cmd.Parameters.AddWithValue("@Nombre", txt_nombre.Text);
             cmd.Parameters.AddWithValue("@Apellidos", txt_apellido.Text);
-            cmd.Parameters.AddWithValue("@IdUsuario",  txt_IdUsuario.Text);
+            cmd.Parameters.AddWithValue("@IdUsuario", txt_IdUsuario.Text);
             cmd.Parameters.AddWithValue("@Contrasena", txt_contraseña.Text);
             cmd.Parameters.AddWithValue("@Rol", cmb_rol.Text);
-           
+
 
             try
             {
@@ -73,17 +73,17 @@ namespace SistemaEstudiantilWF
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string eliminar = "DELETE FROM Usuario where Nombre= @Nombre ";
+            string eliminar = "DELETE FROM Usuario where IdUsuario= @IdUsuario ";
 
             SqlCommand cmd = new SqlCommand(eliminar, Conexion.getinstance().getConexion());
-            cmd.Parameters.AddWithValue("@Nombre", txt_nombre.Text);
+            cmd.Parameters.AddWithValue("@IdUsuario", txt_nombre.Text);
 
 
             try
             {
                 cmd.ExecuteNonQuery();
 
-                MessageBox.Show("Estudiante eliminado correctamente.");
+                MessageBox.Show("Usuario eliminado correctamente.");
             }
             catch (Exception ex)
             {
