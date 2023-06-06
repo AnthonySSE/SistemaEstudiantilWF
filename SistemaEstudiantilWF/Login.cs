@@ -31,8 +31,8 @@ namespace SistemaEstudiantilWF
 
                 if (dt.Rows.Count > 0)
                 {
-                    IdUsuario = IdUsuario;
-                    Contrasena = Contrasena;
+                   /* IdUsuario = IdUsuario;
+                    Contrasena = Contrasena;*/
 
                     MessageBox.Show("Logueo exitoso");
 

@@ -29,89 +29,101 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Asignaturas));
-            this.btn_asignar = new System.Windows.Forms.Button();
-            this.cmb_asignaturas = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_matriculaestudiante = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.SuspendLayout();
+            btn_asignar = new Button();
+            cmb_asignaturas = new ComboBox();
+            label7 = new Label();
+            label1 = new Label();
+            txt_matriculaestudiante = new TextBox();
+            panel1 = new Panel();
+            SuspendLayout();
             // 
             // btn_asignar
             // 
-            this.btn_asignar.Location = new System.Drawing.Point(756, 28);
-            this.btn_asignar.Name = "btn_asignar";
-            this.btn_asignar.Size = new System.Drawing.Size(158, 73);
-            this.btn_asignar.TabIndex = 0;
-            this.btn_asignar.Text = "Asignar";
-            this.btn_asignar.UseVisualStyleBackColor = true;
-            this.btn_asignar.Click += new System.EventHandler(this.btn_asignar_Click);
+            btn_asignar.BackColor = Color.RoyalBlue;
+            btn_asignar.FlatStyle = FlatStyle.Flat;
+            btn_asignar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_asignar.ForeColor = Color.White;
+            btn_asignar.Location = new Point(867, 238);
+            btn_asignar.Margin = new Padding(3, 4, 3, 4);
+            btn_asignar.Name = "btn_asignar";
+            btn_asignar.Size = new Size(539, 39);
+            btn_asignar.TabIndex = 0;
+            btn_asignar.Text = "Asignar";
+            btn_asignar.UseVisualStyleBackColor = false;
+            btn_asignar.Click += btn_asignar_Click;
             // 
             // cmb_asignaturas
             // 
-            this.cmb_asignaturas.FormattingEnabled = true;
-            this.cmb_asignaturas.Location = new System.Drawing.Point(8, 57);
-            this.cmb_asignaturas.Name = "cmb_asignaturas";
-            this.cmb_asignaturas.Size = new System.Drawing.Size(244, 23);
-            this.cmb_asignaturas.TabIndex = 1;
-            this.cmb_asignaturas.SelectedIndexChanged += new System.EventHandler(this.cmb_asignaturas_SelectedIndexChanged);
+            cmb_asignaturas.BackColor = Color.FromArgb(230, 231, 233);
+            cmb_asignaturas.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmb_asignaturas.FormattingEnabled = true;
+            cmb_asignaturas.Location = new Point(15, 249);
+            cmb_asignaturas.Margin = new Padding(3, 4, 3, 4);
+            cmb_asignaturas.Name = "cmb_asignaturas";
+            cmb_asignaturas.Size = new Size(371, 28);
+            cmb_asignaturas.TabIndex = 1;
+            cmb_asignaturas.SelectedIndexChanged += cmb_asignaturas_SelectedIndexChanged;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(78, 28);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 15);
-            this.label7.TabIndex = 48;
-            this.label7.Text = "Asignaturas";
+            label7.AutoSize = true;
+            label7.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = Color.Black;
+            label7.Location = new Point(15, 211);
+            label7.Name = "label7";
+            label7.Size = new Size(93, 20);
+            label7.TabIndex = 48;
+            label7.Text = "Asignaturas";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(470, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 15);
-            this.label1.TabIndex = 50;
-            this.label1.Text = "Ingresar Matricula";
+            label1.AutoSize = true;
+            label1.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(421, 211);
+            label1.Name = "label1";
+            label1.Size = new Size(137, 20);
+            label1.TabIndex = 50;
+            label1.Text = "Ingresar Matricula";
             // 
             // txt_matriculaestudiante
             // 
-            this.txt_matriculaestudiante.Location = new System.Drawing.Point(447, 57);
-            this.txt_matriculaestudiante.MaxLength = 40;
-            this.txt_matriculaestudiante.Name = "txt_matriculaestudiante";
-            this.txt_matriculaestudiante.Size = new System.Drawing.Size(198, 23);
-            this.txt_matriculaestudiante.TabIndex = 51;
+            txt_matriculaestudiante.BackColor = Color.FromArgb(230, 231, 233);
+            txt_matriculaestudiante.Location = new Point(421, 250);
+            txt_matriculaestudiante.Margin = new Padding(3, 4, 3, 4);
+            txt_matriculaestudiante.MaxLength = 40;
+            txt_matriculaestudiante.Name = "txt_matriculaestudiante";
+            txt_matriculaestudiante.Size = new Size(371, 27);
+            txt_matriculaestudiante.TabIndex = 51;
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Location = new System.Drawing.Point(2, 168);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1111, 460);
-            this.panel1.TabIndex = 52;
+            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
+            panel1.Location = new Point(604, 443);
+            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(227, 202);
+            panel1.TabIndex = 52;
             // 
             // Asignaturas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1125, 640);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txt_matriculaestudiante);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.cmb_asignaturas);
-            this.Controls.Add(this.btn_asignar);
-            this.Name = "Asignaturas";
-            this.Text = "Asignaturas";
-            this.Load += new System.EventHandler(this.Asignaturas_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            ClientSize = new Size(1438, 853);
+            Controls.Add(panel1);
+            Controls.Add(txt_matriculaestudiante);
+            Controls.Add(label1);
+            Controls.Add(label7);
+            Controls.Add(cmb_asignaturas);
+            Controls.Add(btn_asignar);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "Asignaturas";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Asignaturas";
+            Load += Asignaturas_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

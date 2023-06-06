@@ -32,7 +32,7 @@ namespace SistemaEstudiantilWF
         }
         private void cmb_asignaturas_SelectedIndexChanged(object sender, EventArgs e)
         {
-          
+
 
         }
 
@@ -54,10 +54,10 @@ namespace SistemaEstudiantilWF
             }
 
             reader.Close();
-  
+
         }
 
-        
+
         private void btn_asignar_Click(object sender, EventArgs e)
         {
             string matriculaEstudiante = txt_matriculaestudiante.Text;

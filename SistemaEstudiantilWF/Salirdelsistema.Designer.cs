@@ -28,49 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Salirdelsistema));
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.SuspendLayout();
+            label1 = new Label();
+            panel1 = new Panel();
+            timer1 = new System.Windows.Forms.Timer(components);
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(64, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(421, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Gracias por utilizar nuestro sistema estudiantil";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(485, 162);
+            label1.Name = "label1";
+            label1.Size = new Size(547, 32);
+            label1.TabIndex = 0;
+            label1.Text = "Gracias por utilizar nuestro sistema estudiantil";
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Location = new System.Drawing.Point(64, 37);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(431, 280);
-            this.panel1.TabIndex = 1;
+            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
+            panel1.Location = new Point(485, 199);
+            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(493, 373);
+            panel1.TabIndex = 1;
             // 
             // timer1
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            timer1.Tick += timer1_Tick;
             // 
-            // Form5
+            // Salirdelsistema
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Khaki;
-            this.ClientSize = new System.Drawing.Size(578, 345);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label1);
-            this.Name = "Form5";
-            this.Text = "Form5";
-            this.Load += new System.EventHandler(this.Form5_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Khaki;
+            ClientSize = new Size(1427, 673);
+            Controls.Add(panel1);
+            Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "Salirdelsistema";
+            Text = "Form5";
+            Load += Form5_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

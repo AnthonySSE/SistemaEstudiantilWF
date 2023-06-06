@@ -67,10 +67,10 @@ namespace SistemaEstudiantilWF
             if (count > 0)
             {
                 // Las credenciales son válidas, mostrar el formulario principal o realizar otras operaciones necesarias
-                MessageBox.Show("Inicio de sesión exitoso");
+                MessageBox.Show("Inicio de sesión exitoso","Inicio de sesión", MessageBoxButtons.OK,MessageBoxIcon.Information);
                 // abrir el formulario principal
                 FormPrincipal frm = new FormPrincipal();
-
+                this.Hide();
                 frm.Show();
             }
             else

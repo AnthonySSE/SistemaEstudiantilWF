@@ -65,13 +65,17 @@
             // 
             // btn_CrearEstudiante
             // 
-            btn_CrearEstudiante.Location = new Point(11, 455);
+            btn_CrearEstudiante.BackColor = Color.RoyalBlue;
+            btn_CrearEstudiante.FlatStyle = FlatStyle.Flat;
+            btn_CrearEstudiante.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_CrearEstudiante.ForeColor = Color.White;
+            btn_CrearEstudiante.Location = new Point(152, 410);
             btn_CrearEstudiante.Margin = new Padding(3, 4, 3, 4);
             btn_CrearEstudiante.Name = "btn_CrearEstudiante";
-            btn_CrearEstudiante.Size = new Size(205, 73);
+            btn_CrearEstudiante.Size = new Size(186, 44);
             btn_CrearEstudiante.TabIndex = 0;
-            btn_CrearEstudiante.Text = "Crear Estudiante";
-            btn_CrearEstudiante.UseVisualStyleBackColor = true;
+            btn_CrearEstudiante.Text = "Crear";
+            btn_CrearEstudiante.UseVisualStyleBackColor = false;
             btn_CrearEstudiante.Click += button1_Click;
             // 
             // label9
@@ -79,7 +83,7 @@
             label9.AutoSize = true;
             label9.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label9.ForeColor = Color.Black;
-            label9.Location = new Point(517, 251);
+            label9.Location = new Point(18, 251);
             label9.Name = "label9";
             label9.Size = new Size(157, 20);
             label9.TabIndex = 49;
@@ -90,7 +94,7 @@
             label8.AutoSize = true;
             label8.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label8.ForeColor = Color.Black;
-            label8.Location = new Point(537, 137);
+            label8.Location = new Point(359, 137);
             label8.Name = "label8";
             label8.Size = new Size(42, 20);
             label8.TabIndex = 48;
@@ -101,7 +105,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.Black;
-            label7.Location = new Point(517, 13);
+            label7.Location = new Point(699, 13);
             label7.Name = "label7";
             label7.Size = new Size(67, 20);
             label7.TabIndex = 47;
@@ -112,7 +116,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.Black;
-            label6.Location = new Point(263, 251);
+            label6.Location = new Point(1086, 137);
             label6.Name = "label6";
             label6.Size = new Size(49, 20);
             label6.TabIndex = 46;
@@ -123,7 +127,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.Black;
-            label5.Location = new Point(263, 137);
+            label5.Location = new Point(18, 137);
             label5.Name = "label5";
             label5.Size = new Size(43, 20);
             label5.TabIndex = 45;
@@ -134,7 +138,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(263, 12);
+            label4.Location = new Point(359, 12);
             label4.Name = "label4";
             label4.Size = new Size(75, 20);
             label4.TabIndex = 44;
@@ -145,7 +149,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(25, 251);
+            label3.Location = new Point(699, 137);
             label3.Name = "label3";
             label3.Size = new Size(155, 20);
             label3.TabIndex = 43;
@@ -156,7 +160,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(25, 137);
+            label2.Location = new Point(1086, 13);
             label2.Name = "label2";
             label2.Size = new Size(67, 20);
             label2.TabIndex = 42;
@@ -176,7 +180,7 @@
             // txt_cantidadmaterias
             // 
             txt_cantidadmaterias.BackColor = Color.FromArgb(230, 231, 233);
-            txt_cantidadmaterias.Location = new Point(517, 283);
+            txt_cantidadmaterias.Location = new Point(18, 283);
             txt_cantidadmaterias.Margin = new Padding(3, 4, 3, 4);
             txt_cantidadmaterias.MaxLength = 2;
             txt_cantidadmaterias.Name = "txt_cantidadmaterias";
@@ -186,7 +190,7 @@
             // txt_nombre
             // 
             txt_nombre.BackColor = Color.FromArgb(230, 231, 233);
-            txt_nombre.Location = new Point(517, 44);
+            txt_nombre.Location = new Point(699, 44);
             txt_nombre.Margin = new Padding(3, 4, 3, 4);
             txt_nombre.MaxLength = 30;
             txt_nombre.Name = "txt_nombre";
@@ -196,7 +200,7 @@
             // txt_curso
             // 
             txt_curso.BackColor = Color.FromArgb(230, 231, 233);
-            txt_curso.Location = new Point(263, 283);
+            txt_curso.Location = new Point(1086, 169);
             txt_curso.Margin = new Padding(3, 4, 3, 4);
             txt_curso.MaxLength = 25;
             txt_curso.Name = "txt_curso";
@@ -206,7 +210,7 @@
             // txt_edad
             // 
             txt_edad.BackColor = Color.FromArgb(230, 231, 233);
-            txt_edad.Location = new Point(263, 161);
+            txt_edad.Location = new Point(18, 161);
             txt_edad.Margin = new Padding(3, 4, 3, 4);
             txt_edad.MaxLength = 3;
             txt_edad.Name = "txt_edad";
@@ -216,7 +220,7 @@
             // txt_matricula
             // 
             txt_matricula.BackColor = Color.FromArgb(230, 231, 233);
-            txt_matricula.Location = new Point(263, 44);
+            txt_matricula.Location = new Point(359, 44);
             txt_matricula.Margin = new Padding(3, 4, 3, 4);
             txt_matricula.MaxLength = 15;
             txt_matricula.Name = "txt_matricula";
@@ -226,7 +230,7 @@
             // txt_apellido
             // 
             txt_apellido.BackColor = Color.FromArgb(230, 231, 233);
-            txt_apellido.Location = new Point(11, 161);
+            txt_apellido.Location = new Point(1086, 37);
             txt_apellido.Margin = new Padding(3, 4, 3, 4);
             txt_apellido.MaxLength = 30;
             txt_apellido.Name = "txt_apellido";
@@ -246,7 +250,7 @@
             // 
             // dtp_fechanacimiento
             // 
-            dtp_fechanacimiento.Location = new Point(14, 287);
+            dtp_fechanacimiento.Location = new Point(699, 173);
             dtp_fechanacimiento.Margin = new Padding(3, 4, 3, 4);
             dtp_fechanacimiento.Name = "dtp_fechanacimiento";
             dtp_fechanacimiento.Size = new Size(223, 27);
@@ -255,7 +259,7 @@
             // txt_usuarioid
             // 
             txt_usuarioid.BackColor = Color.FromArgb(230, 231, 233);
-            txt_usuarioid.Location = new Point(11, 396);
+            txt_usuarioid.Location = new Point(345, 287);
             txt_usuarioid.Margin = new Padding(3, 4, 3, 4);
             txt_usuarioid.MaxLength = 15;
             txt_usuarioid.Name = "txt_usuarioid";
@@ -267,7 +271,7 @@
             label10.AutoSize = true;
             label10.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label10.ForeColor = Color.Black;
-            label10.Location = new Point(25, 360);
+            label10.Location = new Point(359, 251);
             label10.Name = "label10";
             label10.Size = new Size(83, 20);
             label10.TabIndex = 52;
@@ -275,51 +279,64 @@
             // 
             // btn_limpiar
             // 
-            btn_limpiar.Location = new Point(776, 21);
+            btn_limpiar.BackColor = Color.RoyalBlue;
+            btn_limpiar.FlatStyle = FlatStyle.Flat;
+            btn_limpiar.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_limpiar.ForeColor = Color.White;
+            btn_limpiar.Location = new Point(981, 410);
             btn_limpiar.Margin = new Padding(3, 4, 3, 4);
             btn_limpiar.Name = "btn_limpiar";
-            btn_limpiar.Size = new Size(205, 73);
+            btn_limpiar.Size = new Size(186, 44);
             btn_limpiar.TabIndex = 53;
             btn_limpiar.Text = "Limpiar";
-            btn_limpiar.UseVisualStyleBackColor = true;
+            btn_limpiar.UseVisualStyleBackColor = false;
             btn_limpiar.Click += btn_limpiar_Click;
             // 
             // cmb_sexo
             // 
+            cmb_sexo.DropDownStyle = ComboBoxStyle.DropDownList;
             cmb_sexo.FormattingEnabled = true;
             cmb_sexo.Items.AddRange(new object[] { "M", "F" });
-            cmb_sexo.Location = new Point(517, 161);
+            cmb_sexo.Location = new Point(359, 161);
             cmb_sexo.Margin = new Padding(3, 4, 3, 4);
             cmb_sexo.Name = "cmb_sexo";
-            cmb_sexo.Size = new Size(86, 28);
+            cmb_sexo.Size = new Size(226, 28);
             cmb_sexo.TabIndex = 54;
             cmb_sexo.SelectedIndexChanged += cmb_sexo_SelectedIndexChanged;
             // 
             // btn_actualizar
             // 
-            btn_actualizar.Location = new Point(263, 455);
+            btn_actualizar.BackColor = Color.RoyalBlue;
+            btn_actualizar.FlatStyle = FlatStyle.Flat;
+            btn_actualizar.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_actualizar.ForeColor = Color.White;
+            btn_actualizar.Location = new Point(432, 410);
             btn_actualizar.Margin = new Padding(3, 4, 3, 4);
             btn_actualizar.Name = "btn_actualizar";
-            btn_actualizar.Size = new Size(205, 73);
+            btn_actualizar.Size = new Size(186, 44);
             btn_actualizar.TabIndex = 55;
             btn_actualizar.Text = "Actualizar";
-            btn_actualizar.UseVisualStyleBackColor = true;
+            btn_actualizar.UseVisualStyleBackColor = false;
             btn_actualizar.Click += button1_Click_1;
             // 
             // btn_eliminar
             // 
-            btn_eliminar.Location = new Point(517, 455);
+            btn_eliminar.BackColor = Color.RoyalBlue;
+            btn_eliminar.FlatStyle = FlatStyle.Flat;
+            btn_eliminar.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_eliminar.ForeColor = Color.White;
+            btn_eliminar.Location = new Point(699, 410);
             btn_eliminar.Margin = new Padding(3, 4, 3, 4);
             btn_eliminar.Name = "btn_eliminar";
-            btn_eliminar.Size = new Size(205, 73);
+            btn_eliminar.Size = new Size(186, 44);
             btn_eliminar.TabIndex = 56;
             btn_eliminar.Text = "Eliminar";
-            btn_eliminar.UseVisualStyleBackColor = true;
+            btn_eliminar.UseVisualStyleBackColor = false;
             btn_eliminar.Click += btn_eliminar_Click;
             // 
             // txt_buscar
             // 
-            txt_buscar.Location = new Point(1093, 137);
+            txt_buscar.Location = new Point(163, 551);
             txt_buscar.Margin = new Padding(3, 4, 3, 4);
             txt_buscar.MaxLength = 50;
             txt_buscar.Name = "txt_buscar";
@@ -331,10 +348,10 @@
             // 
             cmb_buscar.FormattingEnabled = true;
             cmb_buscar.Items.AddRange(new object[] { "Matricula", "Nombre", "Apellidos", "UsuarioId" });
-            cmb_buscar.Location = new Point(1385, 137);
+            cmb_buscar.Location = new Point(470, 551);
             cmb_buscar.Margin = new Padding(3, 4, 3, 4);
             cmb_buscar.Name = "cmb_buscar";
-            cmb_buscar.Size = new Size(86, 28);
+            cmb_buscar.Size = new Size(303, 28);
             cmb_buscar.TabIndex = 59;
             cmb_buscar.Text = "Matricula";
             // 
@@ -343,7 +360,7 @@
             label11.AutoSize = true;
             label11.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label11.ForeColor = Color.Black;
-            label11.Location = new Point(1128, 100);
+            label11.Location = new Point(14, 554);
             label11.Name = "label11";
             label11.Size = new Size(134, 20);
             label11.TabIndex = 60;
@@ -352,23 +369,27 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(11, 595);
+            dataGridView1.Location = new Point(11, 630);
             dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(1353, 485);
+            dataGridView1.Size = new Size(1432, 227);
             dataGridView1.TabIndex = 61;
             // 
             // btn_mostrar
             // 
-            btn_mostrar.Location = new Point(776, 455);
+            btn_mostrar.BackColor = Color.RoyalBlue;
+            btn_mostrar.FlatStyle = FlatStyle.Flat;
+            btn_mostrar.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_mostrar.ForeColor = Color.White;
+            btn_mostrar.Location = new Point(11, 900);
             btn_mostrar.Margin = new Padding(3, 4, 3, 4);
             btn_mostrar.Name = "btn_mostrar";
-            btn_mostrar.Size = new Size(205, 73);
+            btn_mostrar.Size = new Size(186, 47);
             btn_mostrar.TabIndex = 62;
             btn_mostrar.Text = "Mostrar";
-            btn_mostrar.UseVisualStyleBackColor = true;
+            btn_mostrar.UseVisualStyleBackColor = false;
             btn_mostrar.Click += btn_mostrar_Click;
             // 
             // errorProvider
@@ -379,8 +400,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(1686, 1055);
+            BackColor = Color.White;
+            ClientSize = new Size(1511, 960);
             Controls.Add(btn_mostrar);
             Controls.Add(dataGridView1);
             Controls.Add(label11);

@@ -21,17 +21,17 @@ namespace SistemaEstudiantilWF
 
         private void btn_reporte1_Click(object sender, EventArgs e)
         {
-          
+
         }
 
         private void btn_reporte2_Click(object sender, EventArgs e)
         {
-   
+
         }
         private void btn_reporte3_Click(object sender, EventArgs e)
         {
-  
-}
+
+        }
 
         private void Reportes_Load(object sender, EventArgs e)
         {
@@ -85,7 +85,7 @@ namespace SistemaEstudiantilWF
             string reporteEstudiantesMasculinoQuery = "SELECT * FROM Estudiante WHERE Sexo = 'M'";
             SqlCommand cmdReporteEstudiantesMasculino = new SqlCommand(reporteEstudiantesMasculinoQuery, Conexion.getinstance().getConexion());
             SqlDataAdapter dataAdapter = new SqlDataAdapter(cmdReporteEstudiantesMasculino);
-            DataTable dataTableEstudiantesMasculino= new DataTable();
+            DataTable dataTableEstudiantesMasculino = new DataTable();
             dataAdapter.Fill(dataTableEstudiantesMasculino);
 
             // Mostrar los resultados en el DataGridView

@@ -17,6 +17,7 @@ namespace ModernGUI_V3
         public FormPrincipal()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Normal;
         }
 
         private void FormPrincipal_Load(object sender, EventArgs e)
@@ -81,17 +82,17 @@ namespace ModernGUI_V3
             sw = this.Size.Width;
             sh = this.Size.Height;
             btnMaximizar.Visible = false;
-            btnRestaurar. Visible = true;
+            btnRestaurar.Visible = true;
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.Location = Screen.PrimaryScreen.WorkingArea.Location;
         }
 
         private void btnRestaurar_Click(object sender, EventArgs e)
         {
-            btnMaximizar.Visible = true ;
+            btnMaximizar.Visible = true;
             btnRestaurar.Visible = false;
-            this.Size = new Size(sw,sh);
-            this.Location = new Point(lx,ly);
+            this.Size = new Size(sw, sh);
+            this.Location = new Point(lx, ly);
         }
 
         private void panelBarraTitulo_MouseMove(object sender, MouseEventArgs e)
@@ -137,7 +138,7 @@ namespace ModernGUI_V3
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-     
+
 
         private void panelformularios_Paint(object sender, PaintEventArgs e)
         {
@@ -157,7 +158,8 @@ namespace ModernGUI_V3
         }
         #endregion
         //METODO PARA ABRIR FORMULARIOS DENTRO DEL PANEL
-        private void AbrirFormulario<MiForm>() where MiForm : Form, new() {
+        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
+        {
             Form formulario;
             formulario = panelformularios.Controls.OfType<MiForm>().FirstOrDefault();//Busca en la colecion el formulario
             //si el formulario/instancia no existe
@@ -171,14 +173,16 @@ namespace ModernGUI_V3
                 panelformularios.Tag = formulario;
                 formulario.Show();
                 formulario.BringToFront();
-                formulario.FormClosed += new FormClosedEventHandler(CloseForms );
+                formulario.FormClosed += new FormClosedEventHandler(CloseForms);
             }
             //si el formulario/instancia existe
-            else {
+            else
+            {
                 formulario.BringToFront();
             }
         }
-        private void CloseForms(object sender,FormClosedEventArgs e) {
+        private void CloseForms(object sender, FormClosedEventArgs e)
+        {
             if (Application.OpenForms["Form1"] == null)
                 btn_menu1.BackColor = Color.FromArgb(4, 41, 68);
             if (Application.OpenForms["Form2"] == null)
